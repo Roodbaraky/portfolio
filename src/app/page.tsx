@@ -43,10 +43,10 @@ export default function Home() {
 
   }, [scrollPosition, prevScrollPosition])
 
-  const handleTouchOn = (e) => {
-    if (e.target === '<nav>')
-      setOpacity('opacity-100')
+  const handleTouchOn = () => {
+    setOpacity('opacity-100')
   }
+
 
   return (
 
@@ -92,13 +92,13 @@ export default function Home() {
       <section id='about-section' className='mt-32'>
         <div className='self-center'>
           <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-bold">
-            Hi, I'm <strong className="font-semibold">Koo</strong>
+            Hi, I&apos;m <strong className="font-semibold">Koo</strong>
           </h1>
 
 
         </div>
         <div id='about-content' className='flex flex-col lg:flex-row lg:justify-evenly md:justify-evenly md:gap-10'>
-          <div className='aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
+          <div className=' aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
             <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-96 self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
           </div>
           <article className="flex flex-col items-center self-center lg:items-start w-fit">
@@ -108,16 +108,16 @@ export default function Home() {
 
             <div className="max-w-prose text-center lg:text-left space-y-3 lg:space-y-4">
               <p className="text-lg lg:text-xl">
-                I've been fascinated with computers since I could crawl!
+                I&apos;ve been fascinated with computers since I could crawl!
               </p>
               <p className="text-lg lg:text-xl">
-                <em>Slightly</em> more recently, I honed my programming skills at <em className="font-semibold">Northcoders'</em> Software Development Bootcamp, diving deep into mobile and web development.
+                <em>Slightly</em> more recently, I honed my programming skills at <em className="font-semibold">Northcoders&apos;</em> Software Development Bootcamp, diving deep into mobile and web development.
               </p>
               <p className="text-lg lg:text-xl">
-                I thrive on solving problems and love tackling new projects, whether it’s front-end, back-end, or full-stack development. My years of experience in hospitality have given me a unique edge in understanding diverse needs and collaborating effectively to deliver top-notch results.
+                I thrive on solving problems and love tackling new projects, whether it&apos;s front-end, back-end, or full-stack development. My years of experience in hospitality have given me a unique edge in understanding diverse needs and collaborating effectively to deliver top-notch results.
               </p>
               <p className="text-lg lg:text-xl">
-                Let’s turn ideas into reality together!
+                Let&apos;s turn ideas into reality together!
               </p>
             </div>
           </article>
@@ -273,7 +273,7 @@ export default function Home() {
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                The Northcoders News (NC News) API is a RESTful back-end interface built to power a reddit-like news app: NC News. The API is built using the Express.js and Node.js frameworks and is powered by a PostgreSQL database in conjunction with ElephantSQL and Render for live hosting.
+                  The Northcoders News (NC News) API is a RESTful back-end interface built to power a reddit-like news app: NC News. The API is built using the Express.js and Node.js frameworks and is powered by a PostgreSQL database in conjunction with ElephantSQL and Render for live hosting.
                 </p>
               </div>
             </div>
@@ -295,7 +295,7 @@ export default function Home() {
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Northcoders News (NC News) app is a front-end web app built using the NC-News API I built previously. It is a reddit-like news app which aggregates articles and allows users to cast votes and make comments on articles. NC News is built using Vite + React and styled using Tailwind CSS and hosted on Netlify.
+                  Northcoders News (NC News) app is a front-end web app built using the NC-News API I built previously. It is a reddit-like news app which aggregates articles and allows users to cast votes and make comments on articles. NC News is built using Vite + React and styled using Tailwind CSS and hosted on Netlify.
                 </p>
               </div>
             </div>
@@ -317,7 +317,7 @@ export default function Home() {
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material. 
+                  SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material.
                 </p>
               </div>
             </div>
@@ -356,13 +356,13 @@ export default function Home() {
             <a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsLinkedin /></a>
             <a href='https://wa.me/07513420494?' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsWhatsapp /></a>
             <a href="tel:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsTelephoneFill /></a>
-            <a href="sms:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsChatText/></a>
+            <a href="sms:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsChatText /></a>
 
           </div>
         </div>
         <div className='flex flex-col items-center text-xs italic mt-3'>
-         <p>kooroshr@hotmail.com</p>
-         <p>07513420494</p>
+          <p>kooroshr@hotmail.com</p>
+          <p>07513420494</p>
         </div>
       </section>
 
