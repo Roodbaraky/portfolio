@@ -3,8 +3,9 @@ import { useEffect, useState } from 'react'
 import { themeChange } from 'theme-change'
 import { BsFillMoonStarsFill, BsBrightnessHighFill, BsEmojiKissFill, BsSlashCircle, BsList, BsGithub, BsLinkedin, BsFileEarmarkArrowDown, BsNodePlusFill, BsWhatsapp, BsPhone, BsTelephone, BsTelephoneFill, BsTextCenter, BsChatText } from 'react-icons/bs'
 import { DiCss3, DiHtml5, DiJsBadge, DiMongodb, DiPostgresql, DiPython, DiReact } from 'react-icons/di'
-import { RiNodejsFill, RiTailwindCssFill } from 'react-icons/ri'
+import { RiNextjsFill, RiNodejsFill, RiTailwindCssFill } from 'react-icons/ri'
 import { SiExpress, SiJest, SiTypescript } from 'react-icons/si'
+
 
 
 
@@ -50,7 +51,7 @@ export default function Home() {
 
   return (
 
-    <main onTouchStart={handleTouchOn} className='px-5'>
+    <main onTouchStart={handleTouchOn} className='px-2 mx-auto w-full'>
 
       <section className='w-100vw h-80vh'>
         <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow-lg`} >
@@ -89,20 +90,20 @@ export default function Home() {
         </nav>
       </section>
       <a id='about' className='absolute -top-24'></a>
-      <section id='about-section' className='mt-32'>
-        <div className='self-center'>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-bold">
+      <section id='about-section' className='mt-32 mx-auto self-center flex flex-col'>
+        <div className='lg:self-start'>
+          <h1 className=" text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-sans">
             Hi, I&apos;m <strong className="font-semibold">Koo</strong>
           </h1>
 
 
         </div>
-        <div id='about-content' className='flex flex-col lg:flex-row lg:justify-evenly md:justify-evenly md:gap-10'>
+        <div id='about-content' className='mx-auto w-full flex flex-col self-center lg:flex-row lg:justify-evenly md:justify-evenly md:gap-10'>
           <div className=' aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
-            <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-96 self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
+            <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-full self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
           </div>
           <article className="flex flex-col items-center self-center lg:items-start w-fit">
-            <h2 className="mb-2 text-3xl  md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
+            <h2 className="mb-2 text-4xl  md:text-5xl lg:text-6xl xl:text-7xl text-center lg:text-left font-sans">
               Software Developer
             </h2>
 
@@ -119,6 +120,7 @@ export default function Home() {
               <p className="text-lg lg:text-xl">
                 Let&apos;s turn ideas into reality together!
               </p>
+              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin/>LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsGithub/>GitHub</a></div>
             </div>
           </article>
 
@@ -234,6 +236,13 @@ export default function Home() {
                 </span>
               </div>
 
+
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <RiNextjsFill className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+
               <div className="flex flex-col items-center  gap-4">
                 <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
                   <DiPython className='hover:scale-150 transition-transform ease-in-out text-4xl' />
@@ -336,11 +345,11 @@ export default function Home() {
           <form action="https://formspree.io/f/mrgndnnj" method="POST" className='flex flex-col space-y-4'>
             <label className="input input-bordered flex items-center gap-2">
               Name
-              <input type="text" required className="grow placeholder:italic placeholder:opacity-60" placeholder="Joe Bloggs" />
+              <input type="text" required className="grow overflow-hidden placeholder:italic placeholder:opacity-60" placeholder="Joe Bloggs" />
             </label>
             <label className="input input-bordered flex items-center gap-2">
               Email
-              <input type="text" required className="grow placeholder:italic placeholder:opacity-60" placeholder="BigShotTechRecruiter@site.com" />
+              <input type="text" required className="grow  overflow-hidden placeholder:italic placeholder:opacity-60" placeholder="BigShotTechRecruiter@site.com" />
             </label>
             <div>
               <label htmlFor="message" className='block text-lg font-medium hidden'>Message</label>
