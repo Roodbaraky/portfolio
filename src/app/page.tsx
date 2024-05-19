@@ -91,7 +91,7 @@ export default function Home() {
       <a id='about' className='absolute -top-24'></a>
       <section id='about-section' className='mt-32'>
         <div className='self-center'>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-bold">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-bold">
             Hi, I'm <strong className="font-semibold">Koo</strong>
           </h1>
 
@@ -102,7 +102,7 @@ export default function Home() {
             <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-96 self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
           </div>
           <article className="flex flex-col items-center self-center lg:items-start w-fit">
-            <h2 className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
+            <h2 className="mb-2 text-3xl  md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
               Software Developer
             </h2>
 
@@ -256,77 +256,68 @@ export default function Home() {
       <a id='projects' className='relative -top-24'></a>
       <section id='projects-section' className='flex flex-col items-center'>
 
-        <div className='projects-container w-[80%]'>
-          <article className="my-5 relative overflow-hidden rounded-lg shadow transition hover:shadow-xl hover:drop-shadow-xl">
+        <div className='projects-container w-[80%] flex flex-col lg:flex-row gap-8 mt-6'>
+          <article className=" hover:scale-110 transition-all delay-150 ease-in-out relative overflow-hidden rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 ">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              src={"/assets/api-proj.png"}
               className="absolute inset-0 h-full w-full object-cover"
             />
 
             <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div className="p-4 sm:p-6">
-                <time dateTime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+                <time dateTime="2022-10-10" className="block text-xs text-white/90"> 15th April 2024 </time>
 
-                <a href="#">
-                  <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+                <a href="https://nc-news-solo-kr.onrender.com/api">
+                  <h3 className="mt-0.5 text-lg text-white">NC News API</h3>
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                  pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                  atque dignissimos. Molestias explicabo corporis voluptatem?
+                The Northcoders News (NC News) API is a RESTful back-end interface built to power a reddit-like news app: NC News. The API is built using the Express.js and Node.js frameworks and is powered by a PostgreSQL database in conjunction with ElephantSQL and Render for live hosting.
                 </p>
               </div>
             </div>
           </article>
 
-          <article className="my-5 relative overflow-hidden rounded-lg shadow transition hover:shadow-xl hover:drop-shadow-xl">
+          <article className=" hover:scale-110 transition-all delay-150 ease-in-out relative overflow-hidden rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              src={"/assets/app-proj.png"}
               className="absolute inset-0 h-full w-full object-cover"
             />
 
             <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div className="p-4 sm:p-6">
-                <time dateTime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+                <time dateTime="2022-10-10" className="block text-xs text-white/90"> 3rd May 2024 </time>
 
-                <a href="#">
-                  <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+                <a href="https://nc-news-kroo.netlify.app/">
+                  <h3 className="mt-0.5 text-lg text-white">NC News</h3>
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                  pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                  atque dignissimos. Molestias explicabo corporis voluptatem?
+                Northcoders News (NC News) app is a front-end web app built using the NC-News API I built previously. It is a reddit-like news app which aggregates articles and allows users to cast votes and make comments on articles. NC News is built using Vite + React and styled using Tailwind CSS and hosted on Netlify.
                 </p>
               </div>
             </div>
           </article>
 
-          <article className="my-5 relative overflow-hidden rounded-lg shadow transition hover:shadow-xl hover:drop-shadow-xl">
+          <article className=" hover:scale-110 transition-all delay-150 ease-in-out relative overflow-hidden rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+              src={"/assets/app2-proj.png"}
               className="absolute inset-0 h-full w-full object-cover"
             />
 
             <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div className="p-4 sm:p-6">
-                <time dateTime="2022-10-10" className="block text-xs text-white/90"> 10th Oct 2022 </time>
+                <time dateTime="2022-10-10" className="block text-xs text-white/90"> Coming Soon... </time>
 
                 <a href="#">
-                  <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+                  <h3 className="mt-0.5 text-lg text-white">SkillFlash</h3>
                 </a>
 
                 <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                  pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                  quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                  atque dignissimos. Molestias explicabo corporis voluptatem?
+                  SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material. 
                 </p>
               </div>
             </div>
