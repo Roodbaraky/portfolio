@@ -120,7 +120,7 @@ export default function Home() {
               <p className="text-lg lg:text-xl">
                 Let&apos;s turn ideas into reality together!
               </p>
-              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin/>LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsGithub/>GitHub</a></div>
+              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin/>LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub/>GitHub</a></div>
             </div>
           </article>
 
