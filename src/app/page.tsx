@@ -324,7 +324,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <span className="mt-8 flex items-center mx-14">
+      <span className="mt-14 flex items-center mx-14">
         <span className="h-px flex-1 bg-primary opacity-65"></span>
         <span className="text-2xl italic font-mono shrink-0 px-6">Contact</span>
         <span className="h-px flex-1 bg-primary opacity-65"></span>
