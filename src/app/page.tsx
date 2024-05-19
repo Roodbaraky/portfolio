@@ -344,7 +344,7 @@ export default function Home() {
             </label>
             <div>
               <label htmlFor="message" className='block text-lg font-medium hidden'>Message</label>
-              <textarea id="message" name="message" rows="4" required placeholder='I want to offer you a wonderful job...' className='placeholder:italic placeholder:opacity-60 resize-none w-full bg-base-100 px-4 py-2 border border-[var(--fallback-bc,oklch(var(--bc)/0.2))] rounded-lg focus:outline-none focus:ring-2 focus:ring-primary'></textarea>
+              <textarea id="message" name="message" rows={4} required placeholder='I want to offer you a wonderful job...' className='placeholder:italic placeholder:opacity-60 resize-none w-full bg-base-100 px-4 py-2 border border-[var(--fallback-bc,oklch(var(--bc)/0.2))] rounded-lg focus:outline-none focus:ring-2 focus:ring-primary'></textarea>
             </div>
             <button type="submit" className='px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors'>Send Message</button>
           </form>
