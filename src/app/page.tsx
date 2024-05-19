@@ -1,8 +1,10 @@
 "use client"
 import { useEffect, useState } from 'react'
 import { themeChange } from 'theme-change'
-import { BsFillMoonStarsFill, BsBrightnessHighFill, BsEmojiKissFill, BsSlashCircle, BsList, BsGithub, BsLinkedin, BsFileEarmarkArrowDown } from 'react-icons/bs'
+import { BsFillMoonStarsFill, BsBrightnessHighFill, BsEmojiKissFill, BsSlashCircle, BsList, BsGithub, BsLinkedin, BsFileEarmarkArrowDown, BsNodePlusFill, BsWhatsapp, BsPhone, BsTelephone, BsTelephoneFill, BsTextCenter, BsChatText } from 'react-icons/bs'
 import { DiCss3, DiHtml5, DiJsBadge, DiMongodb, DiPostgresql, DiPython, DiReact } from 'react-icons/di'
+import { RiNodejsFill, RiTailwindCssFill } from 'react-icons/ri'
+import { SiExpress, SiJest, SiTypescript } from 'react-icons/si'
 
 
 
@@ -51,7 +53,7 @@ export default function Home() {
     <main onTouchStart={handleTouchOn} className='px-5'>
 
       <section className='w-100vw h-80vh'>
-        <nav  className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow-lg`} >
+        <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow-lg`} >
 
           <div className="group dropdown dropdown-hover place-self-start pr-8 pb-3">
             <div tabIndex={0} className='btn dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start ' role='button'>
@@ -88,35 +90,37 @@ export default function Home() {
       </section>
       <a id='about' className='absolute -top-24'></a>
       <section id='about-section' className='mt-32'>
+        <div className='self-center'>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-4 lg:ml-8 font-bold">
+            Hi, I'm <strong className="font-semibold">Koo</strong>
+          </h1>
 
-        <div className='flex flex-col lg:flex-row'>
+
+        </div>
+        <div id='about-content' className='flex flex-col lg:flex-row lg:justify-evenly md:justify-evenly md:gap-10'>
           <div className='aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
             <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-96 self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
+          </div>
+          <article className="flex flex-col items-center self-center lg:items-start w-fit">
+            <h2 className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
+              Software Developer
+            </h2>
+
+            <div className="max-w-prose text-center lg:text-left space-y-3 lg:space-y-4">
+              <p className="text-lg lg:text-xl">
+                I've been fascinated with computers since I could crawl!
+              </p>
+              <p className="text-lg lg:text-xl">
+                <em>Slightly</em> more recently, I honed my programming skills at <em className="font-semibold">Northcoders'</em> Software Development Bootcamp, diving deep into mobile and web development.
+              </p>
+              <p className="text-lg lg:text-xl">
+                I thrive on solving problems and love tackling new projects, whether it’s front-end, back-end, or full-stack development. My years of experience in hospitality have given me a unique edge in understanding diverse needs and collaborating effectively to deliver top-notch results.
+              </p>
+              <p className="text-lg lg:text-xl">
+                Let’s turn ideas into reality together!
+              </p>
             </div>
-            <article className="flex flex-col items-center lg:items-start mx-5 w-full">
-  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-center lg:text-left mb-2 font-bold">
-    Hi, I'm <strong className="font-semibold">Koo</strong>
-  </h1>
-
-  <h2 className="mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-left">
-    Software Developer
-  </h2>
-
-  <div className="max-w-prose text-center lg:text-left space-y-3 lg:space-y-4">
-    <p className="text-lg lg:text-xl">
-      I've been fascinated with computers since I could crawl!
-    </p>
-    <p className="text-lg lg:text-xl">
-      <em>Slightly</em> more recently, I honed my programming skills at <em className="font-semibold">Northcoders'</em> Software Development Bootcamp, diving deep into mobile and web development.
-    </p>
-    <p className="text-lg lg:text-xl">
-      I thrive on solving problems and love tackling new projects, whether it’s front-end, back-end, or full-stack development. My years of experience in hospitality have given me a unique edge in understanding diverse needs and collaborating effectively to deliver top-notch results.
-    </p>
-    <p className="text-lg lg:text-xl">
-      Let’s turn ideas into reality together!
-    </p>
-  </div>
-</article>
+          </article>
 
 
         </div>
@@ -133,70 +137,112 @@ export default function Home() {
         <a id='' className='absolute -top-24'></a>
         <section id='skills-container' className="rounded-xl flex items-center w-full">
           <div className=" w-full px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8 flex flex-col items-center ">
-            <div id='skills-content' className='flex flex-col sm:grid grid-cols-3 mb-4'>
+            <div id='skills-content' className='flex flex-col sm:grid grid-cols-3 gap-4 mb-8'>
               <div>
-                <h3 className='text-2xl my-2'>Frontend</h3>
-                <p className='mr-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ex sapiente obcaecati placeat, voluptatum illum accusantium adipisci pariatur alias error itaque quo labore autem voluptatibus a commodi, vel nihil voluptatem?</p>
+                <h3 className='text-2xl my-2 font-semibold'>Web Development</h3>
+                <ul>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Frontend:</p> Skilled in crafting sleek user interfaces with <a className='italic'>HTML</a>, <a className='italic'>CSS</a>, and <a className='italic'>JavaScript</a>. Proficient with modern frameworks like <a className='italic'>React.js</a>.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Backend:</p> Experienced in building robust server-side systems with <a className='italic'>Node.js</a> and <a className='italic'>Express.js</a>, ensuring seamless data flow and API integrations.
+                  </li>
+                </ul>
               </div>
               <div>
-                <h3 className='text-2xl my-2'>Backend</h3>
-                <p className='mr-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore vel magnam molestias atque et esse distinctio deleniti! Quis optio, atque delectus expedita dicta a sint blanditiis earum fugiat eius.</p>
+                <h3 className='text-2xl my-2 font-semibold'>Data & Testing</h3>
+                <ul>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Database Management:</p> Proficient in designing and managing database schemas using <a className='italic'>MongoDB</a> and <a className='italic'>PostgreSQL</a>, ensuring data integrity and performance.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Testing:</p> Skilled in writing effective tests for resilience using <a className='italic'>Jest</a> and <a className='italic'>Cypress</a>, ensuring excellent code quality and reliability.
+                  </li>
+                </ul>
               </div>
               <div>
-                <h3 className='text-2xl my-2'>FullStack</h3>
-                <p className='mr-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi voluptate obcaecati facere doloremque eligendi officiis dolorum, ratione accusantium dignissimos dicta voluptatibus enim magnam necessitatibus expedita minus hic beatae blanditiis.</p>
+                <h3 className='text-2xl my-2 font-semibold'>Project Management</h3>
+                <ul>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Agile Practices:</p> Proficient in Agile methodologies like <a className='italic'>Scrum</a> and <a className='italic'>Kanban</a>, adept at using tools such as <a className='italic'>Figma</a> and <a className='italic'>Trello</a> for efficient project planning and execution.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Collaboration:</p> Skilled in pair programming and proficient with collaboration tools like <a className='italic'>Slack</a> and <a className='italic'>Zoom</a>, ensuring seamless teamwork and effective communication.
+                  </li>
+                </ul>
               </div>
             </div>
-            <div id='icons-container' className="mt-4 flex flex-wrap place-items-center place-content-evenly gap-3 sm:w-[45%]">
+
+            <div id='icons-container' className="mt-4 flex flex-wrap place-items-center place-content-evenly gap-3 sm:w-[60%]">
               <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiHtml5 className='hover:scale-125 text-4xl' />
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125  p-4 my-2">
+                  <DiHtml5 className='hover:scale-150 transition-transform ease-in-out text-4xl' />
                 </span>
               </div>
 
               <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiCss3 className='hover:scale-125 text-4xl' />
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiCss3 className='hover:scale-150 transition-transform ease-in-out text-4xl' />
                 </span>
               </div>
               <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiJsBadge className='hover:scale-125 text-4xl' />
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiJsBadge className='hover:scale-150 transition-transform ease-in-out text-4xl' />
                 </span>
               </div>
               <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiReact className='hover:scale-125 text-4xl' />
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <RiNodejsFill className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <SiJest className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiPostgresql className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiReact className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+
+              </div>
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <SiExpress className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <SiTypescript className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiMongodb className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <RiTailwindCssFill className='hover:scale-150 transition-transform ease-in-out text-4xl' />
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center  gap-4">
+                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 transition-all delay-100 ease-in-out hover:scale-125 p-4 my-2">
+                  <DiPython className='hover:scale-150 transition-transform ease-in-out text-4xl' />
                 </span>
 
               </div>
 
-              <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiPython className='hover:scale-125 text-4xl' />
-                </span>
 
-              </div>
-              <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiMongodb className='hover:scale-125 text-4xl' />
-                </span>
-              </div>
-              <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 my-2">
-                  <DiPostgresql className='hover:scale-125 text-4xl' />
-                </span>
 
-              </div>
-
-              <div className="flex flex-col items-center  gap-4">
-                <span className="shrink-0 rounded-lg bg-neutral text-primary opacity-40 hover:opacity-70 p-4 w-[68px] h-[68px] my-2">
-                  <svg className='text-5xl scale-[140%] hover:scale-[165%]' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
-                    <path d="M41,8H7C6.447,8,6,8.448,6,9v32c0,1.654,1.346,3,3,3h30c1.654,0,3-1.346,3-3V9C42,8.448,41.553,8,41,8z"></path><path fill="currentColor" d="M39,41H9c-1.105,0-2-0.895-2-2V7h34v32C41,40.105,40.105,41,39,41z"></path><path d="M39,42H9c-1.654,0-3-1.346-3-3V7c0-0.553,0.448-1,1-1h34c0.552,0,1,0.447,1,1v32C42,40.654,40.654,42,39,42z M8,8v31	c0,0.552,0.449,1,1,1h30c0.551,0,1-0.448,1-1V8H8z"></path><polygon points="26.837,23 15,23 15,25.72 19.246,25.72 19.246,38 22.609,38 22.609,25.72 26.837,25.72"></polygon><path d="M37.283,26.403c0,0-1.595-0.993-3.398-0.993c-1.803,0-2.452,0.8-2.452,1.655c0,2.207,6.588,1.986,6.588,6.427 c0,6.841-10.044,3.807-10.044,3.807v-3.282c0,0,1.921,1.352,4.224,1.352s2.216-1.407,2.216-1.6c0-2.041-6.529-2.041-6.529-6.565 c0-6.151,9.512-3.724,9.512-3.724L37.283,26.403z"></path>
-                  </svg>
-                </span>
-
-              </div>
 
             </div>
           </div>
@@ -293,10 +339,42 @@ export default function Home() {
         <span className="h-px flex-1 bg-primary opacity-65"></span>
       </span>
       <a id='contact' className='relative -top-24'></a>
-      <section id='contact-section'>
+      <section id='contact-section' className='flex flex-col items-center my-8'>
+        <div className='w-[80%] max-w-2xl p-6 bg-base-100 rounded-xl shadow-lg'>
 
+          <form action="https://formspree.io/f/mrgndnnj" method="POST" className='flex flex-col space-y-4'>
+            <label className="input input-bordered flex items-center gap-2">
+              Name
+              <input type="text" required className="grow placeholder:italic placeholder:opacity-60" placeholder="Joe Bloggs" />
+            </label>
+            <label className="input input-bordered flex items-center gap-2">
+              Email
+              <input type="text" required className="grow placeholder:italic placeholder:opacity-60" placeholder="BigShotTechRecruiter@site.com" />
+            </label>
+            <div>
+              <label htmlFor="message" className='block text-lg font-medium hidden'>Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder='I want to offer you a wonderful job...' className='placeholder:italic placeholder:opacity-60 resize-none w-full bg-base-100 px-4 py-2 border border-[var(--fallback-bc,oklch(var(--bc)/0.2))] rounded-lg focus:outline-none focus:ring-2 focus:ring-primary'></textarea>
+            </div>
+            <button type="submit" className='px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors'>Send Message</button>
+          </form>
+        </div>
+        <div className='mt-6 text-center'>
+          <p className='text-lg'>Or reach out via:</p>
+          <div className='flex justify-center space-x-4 mt-2'>
+            <a href='https://github.com/Roodbaraky' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsGithub /></a>
+            <a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsLinkedin /></a>
+            <a href='https://wa.me/07513420494?' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsWhatsapp /></a>
+            <a href="tel:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsTelephoneFill /></a>
+            <a href="sms:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsChatText/></a>
 
+          </div>
+        </div>
+        <div className='flex flex-col items-center text-xs italic mt-3'>
+         <p>kooroshr@hotmail.com</p>
+         <p>07513420494</p>
+        </div>
       </section>
+
     </main>
   );
 }
