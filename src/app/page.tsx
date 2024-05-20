@@ -56,13 +56,13 @@ export default function Home() {
       <section className='w-100vw h-80vh'>
         <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow-lg`} >
 
-          <div className="group dropdown dropdown-hover place-self-start pr-8 pb-3">
+          <div className="btn-primary group dropdown dropdown-hover place-self-start pr-8 pb-3">
             <div tabIndex={0} className='btn dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start ' role='button'>
               <svg className='scale-[220%]' id='hamburger-icon' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 
             </div>
 
-            <ul tabIndex={0} className={`mt-1 bg-base-100 dropdown-content delay-150 menu p-2 shadow  rounded-box w-52 border-dotted`} >
+            <ul tabIndex={0} className='mt-1 bg-primary text-accent-content dropdown-content delay-150 menu p-2 shadow  rounded-box w-52 border-dotted'>
               <li><a href='#about'>About</a></li>
               <li><a href='#skills'>Skills</a></li>
               <li><a href='#projects'>Projects</a></li>
@@ -71,21 +71,27 @@ export default function Home() {
             </ul>
 
           </div>
-          <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="btn m-1 text-xl rounded-xl  font-light">Koorosh Roodbaraky</div>
-            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-center">
+          <div className="btn-primary dropdown dropdown-hover text-accent-content">
+            <div tabIndex={0} role="button" className="btn m-1 text-xl rounded-xl  font-light text-accent-content">Koorosh Roodbaraky</div>
+            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-primary rounded-box w-52 text-center">
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
               <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank'><BsLinkedin />LinkedIn</a></li>
               <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
+              
+                <div className='sm:hidden flex flex-wrap justify-evenly'>
+                  <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsBrightnessHighFill /></button>
+                  <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsFillMoonStarsFill /></button>
+                  <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsEmojiKissFill /></button>
+                </div>
             </ul>
           </div>
 
 
           <div className='hidden sm:flex flex-nowrap'>
-            <button data-set-theme="" data-act-class="ACTIVECLASS" className='btn rounded-full '><BsSlashCircle /></button>
-            <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn rounded-full '><BsBrightnessHighFill /></button>
-            <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn rounded-full '><BsFillMoonStarsFill /></button>
-            <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn rounded-full '><BsEmojiKissFill /></button>
+            <button data-set-theme="" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsSlashCircle /></button>
+            <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsBrightnessHighFill /></button>
+            <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsFillMoonStarsFill /></button>
+            <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsEmojiKissFill /></button>
           </div>
         </nav>
       </section>
@@ -120,7 +126,7 @@ export default function Home() {
               <p className="text-lg lg:text-xl">
                 Let&apos;s turn ideas into reality together!
               </p>
-              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin/>LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub/>GitHub</a></div>
+              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a></div>
             </div>
           </article>
 
@@ -363,7 +369,7 @@ export default function Home() {
           <div className='flex justify-center space-x-4 mt-2'>
             <a href='https://github.com/Roodbaraky' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsGithub /></a>
             <a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsLinkedin /></a>
-            <a href='https://wa.me/07513420494?' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsWhatsapp /></a>
+            <a href='https://wa.me/+447513420494?' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsWhatsapp /></a>
             <a href="tel:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsTelephoneFill /></a>
             <a href="sms:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsChatText /></a>
 
