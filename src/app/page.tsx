@@ -54,7 +54,7 @@ export default function Home() {
     <main onTouchStart={handleTouchOn} className='px-2 mx-auto w-full'>
 
       <section className='w-100vw h-80vh'>
-        <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow-lg`} >
+        <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow`} >
 
           <div className="btn-primary group dropdown dropdown-hover place-self-start pr-8 pb-3">
             <div tabIndex={0} className='btn dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start ' role='button'>
@@ -72,17 +72,17 @@ export default function Home() {
 
           </div>
           <div className="btn-primary dropdown dropdown-hover text-accent-content">
-            <div tabIndex={0} role="button" className="btn m-1 text-xl rounded-xl  font-light text-accent-content">Koorosh Roodbaraky</div>
+            <div tabIndex={0} role="button" className="btn m-1 text-xl rounded-xl  font-light text-accent-content sm:hidden">Koorosh Roodbaraky</div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-primary rounded-box w-52 text-center">
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
               <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank'><BsLinkedin />LinkedIn</a></li>
               <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
-              
-                <div className='sm:hidden flex flex-wrap justify-evenly'>
-                  <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsBrightnessHighFill /></button>
-                  <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsFillMoonStarsFill /></button>
-                  <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsEmojiKissFill /></button>
-                </div>
+
+              <div className='sm:hidden flex flex-wrap justify-evenly'>
+                <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsBrightnessHighFill /></button>
+                <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsFillMoonStarsFill /></button>
+                <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsEmojiKissFill /></button>
+              </div>
             </ul>
           </div>
 
@@ -104,33 +104,55 @@ export default function Home() {
 
 
         </div>
-        <div id='about-content' className='mx-auto w-full flex flex-col self-center lg:flex-row lg:justify-evenly md:justify-evenly md:gap-10'>
-          <div className=' aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
-            <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-full self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
-          </div>
-          <article className="flex flex-col items-center self-center lg:items-start w-fit">
-            <h2 className="mb-2 text-4xl  md:text-5xl lg:text-6xl xl:text-7xl text-center lg:text-left font-sans">
-              Software Developer
-            </h2>
+        <div>
+          <div id='about-content' className='mx-auto w-full flex flex-col self-center lg:flex-row lg:justify-evenly md:justify-evenly md:gap-8'>
 
-            <div className="max-w-prose text-center lg:text-left space-y-3 lg:space-y-4">
-              <p className="text-lg lg:text-xl">
-                I&apos;ve been fascinated with computers since I could crawl!
-              </p>
-              <p className="text-lg lg:text-xl">
-                <em>Slightly</em> more recently, I honed my programming skills at <em className="font-semibold">Northcoders&apos;</em> Software Development Bootcamp, diving deep into mobile and web development.
-              </p>
-              <p className="text-lg lg:text-xl">
-                I thrive on solving problems and love tackling new projects, whether it&apos;s front-end, back-end, or full-stack development. My years of experience in hospitality have given me a unique edge in understanding diverse needs and collaborating effectively to deliver top-notch results.
-              </p>
-              <p className="text-lg lg:text-xl">
-                Let&apos;s turn ideas into reality together!
-              </p>
-              <div className=' mx-10 flex gap-5 justify-center lg:justify-end'><a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a> <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a></div>
+            <div className=' aspect-square lg:w-full self-center lg:items-start bg-gradient-to-b from-current rounded-full max-w-[500px]'>
+              <img src={"/assets/claypp2-removebg.png"} className='aspect-square w-full self-center lg:items-start lg:w-full max-w-[500px]' alt="" />
             </div>
-          </article>
+            <article className="flex flex-col items-center self-center lg:items-start w-fit">
+              <h2 className="mb-2 text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-center lg:text-left font-sans">
+                Software Developer
+              </h2>
+
+              <div className="max-w-prose text-center lg:text-left space-y-3 lg:space-y-4">
+                <p className="text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl ">
+                  I <u>love</u> solving problems.
+                </p>
+                <p className="text-lg lg:text-xl">
+                  <em>P.S. I&apos;m really good at it</em>
+                </p>
+                <p className="text-2xl lg:text-3xl">
+                  I am eager to work on new projects, across a broad array of tech.
+                </p>
+                <p className="text-3xl lg:text-4xl">
+                  Let&apos;s build something awesome!
+                </p>
+                <div className='mx-10 flex gap-5 justify-center lg:py-4 lg:justify-end'>
+                  <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a>
+                  <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a>
+                  <a className='btn btn-outline btn-warning rounded-full' href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download my CV</a>
+                </div>
+              </div>
+            </article>
 
 
+
+          </div>
+          <div className='text-center mt-6'>
+            <div tabIndex={0} className="collapse mx-auto w-4/6 text-center">
+              <div className="collapse-title text-xl font-medium self-center mx-auto text-center">
+                <p className='font font-light btn btn-outline btn-primary opacity-5 hover:opacity-100 text-center rounded-full shadow-lg'>(Read more)</p>
+              </div>
+              <div className="collapse-content">
+                <p tabIndex={0} className='lg:text-xl'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam deserunt, quod delectus excepturi repellat consequuntur voluptates, vero vitae error doloremque quas ipsa, dignissimos quae nostrum nam est? Eum, praesentium!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, repudiandae harum. Consectetur, nihil eveniet, quam eaque animi unde earum odio exercitationem, sed ab impedit sit non quae rerum eum aliquid.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem nesciunt aspernatur repudiandae optio magnam omnis, placeat distinctio ratione beatae! Voluptas, alias. Libero sequi consequuntur eos fuga eius, perspiciatis illo.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad dolorum soluta saepe cupiditate doloribus. Assumenda magni porro ipsum exercitationem veritatis enim dolorum sunt, voluptatem optio blanditiis dolores distinctio! Molestiae.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
