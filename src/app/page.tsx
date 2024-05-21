@@ -125,13 +125,15 @@ export default function Home() {
                 <p className="text-2xl lg:text-3xl">
                   I am eager to work on new projects, across a broad array of tech.
                 </p>
-                <p className="text-3xl lg:text-4xl">
+                <p className="text-3xl lg:text-4xl pb-4">
                   Let&apos;s build something awesome!
                 </p>
-                <div className='mx-10 flex gap-5 justify-center lg:py-4 lg:justify-end'>
-                  <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a>
-                  <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a>
-                  <a className='btn btn-outline btn-warning rounded-full' href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download my CV</a>
+                <div className='flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end'>
+               <div className='flex gap-5 self-center'>
+                    <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a>
+                    <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a>
+               </div>
+                  <div className='w-fit self-center'><a className='btn btn-outline btn-warning rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap' href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download my CV</a></div>
                 </div>
               </div>
             </article>
@@ -156,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <span className="mt-8 flex items-center mx-14">
+      <span className="mt-12 flex items-center mx-14">
         <span className="h-px flex-1 bg-primary opacity-65"></span>
         <span className="text-2xl italic font-mono shrink-0 px-6">Skills</span>
         <span className="h-px flex-1 bg-primary opacity-65"></span>
