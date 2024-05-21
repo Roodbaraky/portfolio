@@ -144,7 +144,7 @@ export default function Home() {
           <div className='text-center mt-6'>
             <div tabIndex={0} className="collapse mx-auto w-4/6 text-center">
               <div className="collapse-title text-xl font-medium self-center mx-auto text-center">
-                <p className='font font-light btn btn-outline btn-primary opacity-5 hover:opacity-100 text-center rounded-full shadow-lg'>(Read more)</p>
+                <p className='font-light btn btn-outline btn-primary opacity-5 hover:opacity-100 text-center rounded-full shadow-lg'>(Read more)</p>
               </div>
               <div className="collapse-content">
                 <p tabIndex={0} className='lg:text-xl'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam deserunt, quod delectus excepturi repellat consequuntur voluptates, vero vitae error doloremque quas ipsa, dignissimos quae nostrum nam est? Eum, praesentium!
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-      <span className="mt-12 flex items-center mx-14">
+      <span className="mt-1 flex items-center mx-14">
         <span className="h-px flex-1 bg-primary opacity-65"></span>
         <span className="text-2xl italic font-mono shrink-0 px-6">Skills</span>
         <span className="h-px flex-1 bg-primary opacity-65"></span>

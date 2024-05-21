@@ -11,3 +11,15 @@
 *{
   scroll-behavior: smooth;
 }
+.collapse-title,
+:where(.collapse > input[type="checkbox"]),
+:where(.collapse > input[type="radio"]) {
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  padding: 16;
+}
+.collapse-title{
+  padding-inline-end: 0;
+  padding-inline-start: 0;
+  padding: 16;
+}
