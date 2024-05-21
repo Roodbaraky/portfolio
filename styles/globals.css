@@ -23,3 +23,18 @@
   padding-inline-start: 0;
   padding: 16;
 }
+
+#myname{
+  transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+}
+
+#hamburger-icon{
+transition-property: fill, background-color, border-color, opacity, box-shadow, transform;
+    fill: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+    
+}
+#hamburger-icon-alt{
+  transition-property: fill, background-color, border-color, opacity, box-shadow, transform;
+  fill: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
+}
