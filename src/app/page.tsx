@@ -12,7 +12,7 @@ import { SiExpress, SiJest, SiTypescript } from 'react-icons/si'
 export default function Home() {
   const [btn, setBtn] = useState('btn-')
   const [bgcolor, setBgcolor] = useState('bg-transparent')
-  const [shadow, setShadow] = useState('shadow-xs')
+  const [shadow, setShadow] = useState('shadow')
   const [hamburger, setHamburger] = useState('hamburger-icon')
 
 
@@ -47,8 +47,8 @@ export default function Home() {
       setBgcolor('bg-base-100')
     }
     if (scrollPosition / prevScrollPosition < 1) {
-      setBgcolor('bg-transparent')
-      setShadow('')
+      // setBgcolor('bg-transparent')
+      // setShadow('')
 
     }
 
@@ -70,7 +70,7 @@ export default function Home() {
     <main onTouchStart={handleTouchOn} className='px-2 mx-auto w-full'>
 
       <section className='w-100vw h-80vh'>
-        <nav className={`top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`} >
+        <nav className={`top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-2 mb-12 w-full ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`} >
 
           <div className={`group dropdown dropdown-hover place-self-start pr-8 pb-3`}>
             <div tabIndex={0} className={`btn ${btn} text-primary dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start`} role='button'>
