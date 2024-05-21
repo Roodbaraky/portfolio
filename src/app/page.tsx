@@ -14,7 +14,7 @@ export default function Home() {
   const [bgcolor, setBgcolor] = useState('bg-transparent')
   const [shadow, setShadow] = useState('shadow-xs')
   const [hamburger, setHamburger] = useState('hamburger-icon')
-  const [myname, setMyName] = useState('myname')
+
 
 
   useEffect(() => {
@@ -30,26 +30,26 @@ export default function Home() {
       setScrollPosition(window.scrollY);
     };
     if (scrollPosition < 120) {
-    
+
       setBtn('btn-ghost')
       setBgcolor('bg-transparent')
       setShadow('')
-      setMyName('myname')
+
       setHamburger('hamburger-icon')
     }
     if (scrollPosition > 300) {
       setBtn('btn-primary')
-      setMyName('myname-alt')
+
       setHamburger('hamburger-icon-alt')
     }
-    if (scrollPosition / prevScrollPosition > 1 && scrollPosition>300) {
+    if (scrollPosition / prevScrollPosition > 1 && scrollPosition > 300) {
       setShadow('shadow-xs')
       setBgcolor('bg-base-100')
     }
     if (scrollPosition / prevScrollPosition < 1) {
       setBgcolor('bg-transparent')
       setShadow('')
-      
+
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -61,7 +61,7 @@ export default function Home() {
   }, [scrollPosition, prevScrollPosition])
 
   const handleTouchOn = () => {
-   
+
   }
 
 
@@ -73,8 +73,8 @@ export default function Home() {
         <nav className={`top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`} >
 
           <div className={`group dropdown dropdown-hover place-self-start pr-8 pb-3`}>
-            <div tabIndex={0} className={`btn ${btn} text-primary dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start`}  role='button'>
-              <svg  className='scale-[220%]' id={`${hamburger}`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
+            <div tabIndex={0} className={`btn ${btn} text-primary dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start`} role='button'>
+              <svg className='scale-[220%]' id={`${hamburger}`} xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 
             </div>
 
@@ -83,24 +83,18 @@ export default function Home() {
               <li><a href='#skills'>Skills</a></li>
               <li><a href='#projects'>Projects</a></li>
               <li><a href='#contact'>Contact</a></li>
-
-            </ul>
-
-          </div>
-          <div className="btn-primary dropdown dropdown-hover text-accent-content">
-            {/* fix font colours and menu bg colors next */}
-            <div  id= {`${myname}`} tabIndex={0} role="button" className={`btn ${btn} m-1 text-xl rounded-xl  font-light text-[#oklch] sm:hidden`}>Koorosh Roodbaraky</div>
-            <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-primary rounded-box w-52 text-center">
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
               <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank'><BsLinkedin />LinkedIn</a></li>
               <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
 
               <div className='sm:hidden flex flex-wrap justify-evenly'>
-                <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary transition-all'><BsBrightnessHighFill /></button>
+                <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary'><BsBrightnessHighFill /></button>
                 <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsFillMoonStarsFill /></button>
                 <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsEmojiKissFill /></button>
               </div>
+
             </ul>
+
           </div>
 
 
