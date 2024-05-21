@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useState } from 'react'
+import { use, useEffect, useState } from 'react'
 import { themeChange } from 'theme-change'
 import { BsFillMoonStarsFill, BsBrightnessHighFill, BsEmojiKissFill, BsSlashCircle, BsList, BsGithub, BsLinkedin, BsFileEarmarkArrowDown, BsNodePlusFill, BsWhatsapp, BsPhone, BsTelephone, BsTelephoneFill, BsTextCenter, BsChatText } from 'react-icons/bs'
 import { DiCss3, DiHtml5, DiJsBadge, DiMongodb, DiPostgresql, DiPython, DiReact } from 'react-icons/di'
@@ -10,7 +10,11 @@ import { SiExpress, SiJest, SiTypescript } from 'react-icons/si'
 
 
 export default function Home() {
-  const [opacity, setOpacity] = useState('opacity-100')
+  const [btn, setBtn] = useState('btn-ghost')
+  const [bgcolor, setBgcolor] = useState('bg-transparent')
+  const [shadow, setShadow] = useState('shadow-xs')
+
+
   useEffect(() => {
     themeChange(false)
   }, []);
@@ -24,16 +28,23 @@ export default function Home() {
       setScrollPosition(window.scrollY);
     };
     if (scrollPosition < 120) {
-      setOpacity('opacity-100')
+    
+      setBtn('btn-ghost')
+      setBgcolor('bg-transparent')
+      setShadow('')
     }
-    if (scrollPosition > 120) {
-      setOpacity('opacity-0')
+    if (scrollPosition > 700) {
+    
+      setBtn('btn-primary')
     }
-    if (scrollPosition / prevScrollPosition > 1) {
-      setOpacity('opacity-0')
+    if (scrollPosition / prevScrollPosition > 1 && scrollPosition>700) {
+      setShadow('shadow-xs')
+      setBgcolor('bg-base-100')
     }
     if (scrollPosition / prevScrollPosition < 1) {
-      setOpacity('opacity-100')
+      setBgcolor('bg-transparent')
+      setShadow('')
+      
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -45,7 +56,7 @@ export default function Home() {
   }, [scrollPosition, prevScrollPosition])
 
   const handleTouchOn = () => {
-    setOpacity('opacity-100')
+   
   }
 
 
@@ -54,9 +65,9 @@ export default function Home() {
     <main onTouchStart={handleTouchOn} className='px-2 mx-auto w-full'>
 
       <section className='w-100vw h-80vh'>
-        <nav className={`${opacity} top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full bg-base-100 rounded-xl  z-40  hover:opacity-100 transition-opacity delay-200 ease-in-out shadow`} >
+        <nav className={` top-0 left-0 mt-0 fixed flex justify-between items-center align-middle p-5 mb-12 w-full ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`} >
 
-          <div className="btn-primary group dropdown dropdown-hover place-self-start pr-8 pb-3">
+          <div className={`${btn} group dropdown dropdown-hover place-self-start pr-8 pb-3`}>
             <div tabIndex={0} className='btn dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start ' role='button'>
               <svg className='scale-[220%]' id='hamburger-icon' xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
 
@@ -72,14 +83,14 @@ export default function Home() {
 
           </div>
           <div className="btn-primary dropdown dropdown-hover text-accent-content">
-            <div tabIndex={0} role="button" className="btn m-1 text-xl rounded-xl  font-light text-accent-content sm:hidden">Koorosh Roodbaraky</div>
+            <div tabIndex={0} role="button" className={`btn ${btn} m-1 text-xl rounded-xl  font-light text-accent-content sm:hidden`}>Koorosh Roodbaraky</div>
             <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-primary rounded-box w-52 text-center">
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
               <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank'><BsLinkedin />LinkedIn</a></li>
               <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
 
               <div className='sm:hidden flex flex-wrap justify-evenly'>
-                <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsBrightnessHighFill /></button>
+                <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary transition-all'><BsBrightnessHighFill /></button>
                 <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsFillMoonStarsFill /></button>
                 <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary '><BsEmojiKissFill /></button>
               </div>
@@ -88,10 +99,10 @@ export default function Home() {
 
 
           <div className='hidden sm:flex flex-nowrap'>
-            <button data-set-theme="" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsSlashCircle /></button>
-            <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsBrightnessHighFill /></button>
-            <button data-set-theme="dark" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsFillMoonStarsFill /></button>
-            <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className='btn rounded-full btn-primary '><BsEmojiKissFill /></button>
+            <button data-set-theme="" data-act-class="ACTIVECLASS" className={`${btn} rounded-full btn`}><BsSlashCircle /></button>
+            <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className={`${btn} rounded-full btn`} ><BsBrightnessHighFill /></button>
+            <button data-set-theme="dark" data-act-class="ACTIVECLASS" className={`${btn} rounded-full btn`}><BsFillMoonStarsFill /></button>
+            <button data-set-theme="valentine" data-act-class="ACTIVECLASS" className={`${btn} rounded-full btn`} ><BsEmojiKissFill /></button>
           </div>
         </nav>
       </section>
@@ -129,10 +140,10 @@ export default function Home() {
                   Let&apos;s build something awesome!
                 </p>
                 <div className='flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end'>
-               <div className='flex gap-5 self-center'>
+                  <div className='flex gap-5 self-center'>
                     <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a>
                     <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a>
-               </div>
+                  </div>
                   <div className='w-fit self-center'><a className='btn btn-outline btn-warning rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap' href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download my CV</a></div>
                 </div>
               </div>
@@ -142,7 +153,7 @@ export default function Home() {
 
           </div>
           <div className='text-center mt-6'>
-            <div tabIndex={0} className="collapse mx-auto w-4/6 text-center">
+            <div tabIndex={0} className="collapse mx-auto w-5/6 text-center">
               <div className="collapse-title text-xl font-medium self-center mx-auto text-center">
                 <p className='font-light btn btn-outline btn-primary opacity-5 hover:opacity-100 text-center rounded-full shadow-lg'>(Read more)</p>
               </div>
