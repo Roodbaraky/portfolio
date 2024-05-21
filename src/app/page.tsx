@@ -157,11 +157,27 @@ export default function Home() {
               <div className="collapse-title text-xl font-medium self-center mx-auto text-center">
                 <p className='font-light btn btn-outline btn-primary opacity-5 hover:opacity-100 text-center rounded-full shadow-lg'>(Read more)</p>
               </div>
-              <div className="collapse-content">
-                <p tabIndex={0} className='lg:text-xl'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam deserunt, quod delectus excepturi repellat consequuntur voluptates, vero vitae error doloremque quas ipsa, dignissimos quae nostrum nam est? Eum, praesentium!
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, repudiandae harum. Consectetur, nihil eveniet, quam eaque animi unde earum odio exercitationem, sed ab impedit sit non quae rerum eum aliquid.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem nesciunt aspernatur repudiandae optio magnam omnis, placeat distinctio ratione beatae! Voluptas, alias. Libero sequi consequuntur eos fuga eius, perspiciatis illo.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ad dolorum soluta saepe cupiditate doloribus. Assumenda magni porro ipsum exercitationem veritatis enim dolorum sunt, voluptatem optio blanditiis dolores distinctio! Molestiae.
+              <div className="collapse-content text-justify ">
+                <p tabIndex={0} className='text-2xl lg:text-3xl mb-4 text-center '>
+                  Well spotted.
+                </p>
+                <p tabIndex={0} className=' md:text-lg lg:text-xl'>
+                  I have been fascinated with computers for essentially as long as I&apos;ve been able to walk and talk. <em className='text-sm'>- Thanks Dad, for letting me take your machines to bits.</em>
+                </p>
+                <p tabIndex={0} className=' md:text-lg lg:text-xl'>
+                  What I love about working in this field now, is the constantly growing and changing technological landscape and having the means to take concepts from mere ideas, to fully fledged apps.
+                </p>
+                <p tabIndex={0} className=' md:text-lg lg:text-xl my-4'>
+                  <em> Also, it&apos;s <strong>really</strong> satisfying to solve problems - did I say that already?</em>
+                </p>
+                <p tabIndex={0} className=' md:text-lg lg:text-xl'>
+                  When I&apos;m not busy getting square-eyes, though, I like to unwind with meditation and yoga <em className='text-sm'>- don&apos;t even get me started on saunas!</em>
+                </p>
+                <p tabIndex={0} className=' md:text-lg lg:text-xl'>
+                  But equally, I adore <em><strong>all things techno</strong></em>, and I DJ a little bit on the side. If you saw me at the rave... <em>no you didn&apos;t</em>.
+                </p>
+                <p tabIndex={0} className='text-lg md:text-xl lg:text-2xl my-4 text-center'>
+                  Thanks for reading, I&apos;m touched ♥
                 </p>
               </div>
             </div>
@@ -179,16 +195,22 @@ export default function Home() {
 
         <a id='' className='absolute -top-24'></a>
         <section id='skills-container' className="rounded-xl flex items-center w-full">
-          <div className=" w-full px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8 flex flex-col items-center ">
+          <div className="w-full px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8 flex flex-col items-center">
             <div id='skills-content' className='flex flex-col sm:grid grid-cols-3 gap-4 mb-8'>
               <div>
-                <h3 className='text-2xl my-2 font-semibold'>Web Development</h3>
+                <h3 className='text-2xl my-2 font-semibold'>Web & Mobile Dev</h3>
                 <ul>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Frontend:</p> Skilled in crafting sleek user interfaces with <a className='italic'>HTML</a>, <a className='italic'>CSS</a>, and <a className='italic'>JavaScript</a>. Proficient with modern frameworks like <a className='italic'>React.js</a>.
+                    <p className='font-semibold'>Frontend:</p> Building sleek UIs with <a className='italic'>HTML</a>, <a className='italic'>CSS</a>, <a className='italic'>JavaScript</a>, and modern frameworks like <a className='italic'>React</a>.
                   </li>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Backend:</p> Experienced in building robust server-side systems with <a className='italic'>Node.js</a> and <a className='italic'>Express.js</a>, ensuring seamless data flow and API integrations.
+                    <p className='font-semibold'>Backend:</p> Creating robust servers with <a className='italic'>Node.js</a> and <a className='italic'>Express</a>. Desiging and building RESTful APIs with <a className='italic'>PostgreSQL</a> and <a className='italic'>MongoDB</a> .
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Mobile:</p> Developing apps with <a className='italic'>React Native</a> and <a className='italic'>Flutter</a>. Basic porting to <a className='italic'>iOS</a> (Swift) and <a className='italic'>Android</a> (Android Studio) .
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Design:</p> Crafting user-friendly interfaces with <a className='italic'>Figma</a> and <a className='italic'>Dribble</a>.
                   </li>
                 </ul>
               </div>
@@ -196,10 +218,16 @@ export default function Home() {
                 <h3 className='text-2xl my-2 font-semibold'>Data & Testing</h3>
                 <ul>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Database Management:</p> Proficient in designing and managing database schemas using <a className='italic'>MongoDB</a> and <a className='italic'>PostgreSQL</a>, ensuring data integrity and performance.
+                    <p className='font-semibold'>Databases:</p> Managing data with <a className='italic'>MongoDB</a> and <a className='italic'>PostgreSQL</a>. Experience with <a className='italic'>Supabase</a>.
                   </li>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Testing:</p> Skilled in writing effective tests for resilience using <a className='italic'>Jest</a> and <a className='italic'>Cypress</a>, ensuring excellent code quality and reliability.
+                    <p className='font-semibold'>Testing:</p> Stictly adhering to Test Driven Development (TDD) using <a className='italic'>Jest</a> and <a className='italic'>Cypress</a>.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>CI/CD:</p> Following Agile continuous development principles and setting up CI/CD pipelines with tools such as <a className='italic'>GitHub Actions</a>.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>AI:</p> Integrating AI features using <a className='italic'>CohereAI</a>, <a className='italic'>TensorFlow.js</a> and <a className='italic'>Python</a>.
                   </li>
                 </ul>
               </div>
@@ -207,14 +235,20 @@ export default function Home() {
                 <h3 className='text-2xl my-2 font-semibold'>Project Management</h3>
                 <ul>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Agile Practices:</p> Proficient in Agile methodologies like <a className='italic'>Scrum</a> and <a className='italic'>Kanban</a>, adept at using tools such as <a className='italic'>Figma</a> and <a className='italic'>Trello</a> for efficient project planning and execution.
+                    <p className='font-semibold'>Agile:</p> Practicing <a className='italic'>Scrum</a> and <a className='italic'>Kanban</a> using <a className='italic'>Trello</a>, and <a className='italic'>Miro</a>.
                   </li>
                   <li className='py-1 text-left'>
-                    <p className='font-semibold'>Collaboration:</p> Skilled in pair programming and proficient with collaboration tools like <a className='italic'>Slack</a> and <a className='italic'>Zoom</a>, ensuring seamless teamwork and effective communication.
+                    <p className='font-semibold'>Collaboration:</p> Experienced with pair programming and using team communication platforms such as <a className='italic'>Slack</a>, <a className='italic'>Zoom</a>, and <a className='italic'>Microsoft Teams</a>.
+                  </li>
+                  <li className='py-1 text-left'>
+                    <p className='font-semibold'>Leadership:</p> Leading daily standups and managing interpersonal relationships to ensure strong culture and high quality output on group projects.
                   </li>
                 </ul>
               </div>
             </div>
+
+
+
 
             <div id='icons-container' className="mt-4 flex flex-wrap place-items-center place-content-evenly gap-3 sm:w-[60%]">
               <div className="flex flex-col items-center  gap-4">

@@ -38,3 +38,8 @@ transition-property: fill, background-color, border-color, opacity, box-shadow, 
   transition-property: fill, background-color, border-color, opacity, box-shadow, transform;
   fill: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
+
+.collapse-title{
+  width: fit-content;
+  height: fit-content;
+}
