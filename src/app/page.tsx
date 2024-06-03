@@ -84,7 +84,7 @@ export default function Home() {
               <li><a href='#projects'>Projects</a></li>
               <li><a href='#contact'>Contact</a></li>
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
-              <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank'><BsLinkedin />LinkedIn</a></li>
+              <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky/' target='_blank'><BsLinkedin />LinkedIn</a></li>
               <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
 
               <div className='sm:hidden flex flex-wrap justify-evenly'>
@@ -141,7 +141,7 @@ export default function Home() {
                 </p>
                 <div className='flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end'>
                   <div className='flex gap-5 self-center'>
-                    <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/'><BsLinkedin />LinkedIn</a>
+                    <a className='btn btn-warning rounded-full' href='https://www.linkedin.com/in/koorosh-roodbaraky/'><BsLinkedin />LinkedIn</a>
                     <a className='btn btn-warning rounded-full' href='https://github.com/Roodbaraky'><BsGithub />GitHub</a>
                   </div>
                   <div className='w-fit self-center'><a className='btn btn-outline btn-warning rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap' href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download my CV</a></div>
@@ -437,7 +437,7 @@ export default function Home() {
           <p className='text-lg'>Or reach out via:</p>
           <div className='flex justify-center space-x-4 mt-2'>
             <a href='https://github.com/Roodbaraky' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsGithub /></a>
-            <a href='https://www.linkedin.com/in/koorosh-roodbaraky-0a066a109/' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsLinkedin /></a>
+            <a href='https://www.linkedin.com/in/koorosh-roodbaraky/' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsLinkedin /></a>
             <a href='https://wa.me/+447513420494?' target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsWhatsapp /></a>
             <a href="tel:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsTelephoneFill /></a>
             <a href="sms:+447513420494" target='_blank' rel='noopener noreferrer' className='text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark '><BsChatText /></a>
