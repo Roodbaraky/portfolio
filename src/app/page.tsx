@@ -85,7 +85,7 @@ export default function Home() {
               <li><a href='#contact'>Contact</a></li>
               <li><a href='https://github.com/Roodbaraky' target='_blank'><BsGithub />GitHub</a></li>
               <li><a href='https://www.linkedin.com/in/koorosh-roodbaraky/' target='_blank'><BsLinkedin />LinkedIn</a></li>
-              <li><a href='https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
+              <li><a href='https://drive.google.com/uc?export=download&id=1RqxkZrhN6kk0z222h4z_en7t7fUtLueh' target='_blank'><BsFileEarmarkArrowDown />Download CV</a></li>
 
               <div className='sm:hidden flex flex-wrap justify-evenly'>
                 <button data-set-theme="cupcake" data-act-class="ACTIVECLASS" className='btn btn-sm rounded-full btn-primary'><BsBrightnessHighFill /></button>
