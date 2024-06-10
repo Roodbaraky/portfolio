@@ -24,8 +24,8 @@
       "github"
     ],
     "imagePath": "/assets/app-proj.png",
-    "demo": "",
-    "repo": ""
+    "demo": "https://nc-news-kroo.netlify.app",
+    "repo": "https://github.com/Roodbaraky/nc-news-project"
   },
   {
     "project_slug": "skillflash",
@@ -53,8 +53,8 @@
       "interview-questions"
     ],
     "imagePath": "/assets/app2-proj.png",
-    "demo": "",
-    "repo": ""
+    "demo": "https://northcoders.com/project-phase/skillflash",
+    "repo": "https://github.com/Roodbaraky/SkillFlashFrontend"
   },
   {
     "project_slug": "pybase",
@@ -81,6 +81,6 @@
     ],
     "imagePath": "/assets/api-proj.png",
     "demo": "",
-    "repo": ""
+    "repo": "https://github.com/Roodbaraky/PyBase"
   }
 ]

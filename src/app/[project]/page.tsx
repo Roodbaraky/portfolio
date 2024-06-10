@@ -1,5 +1,6 @@
 import fs from "fs";
 import Image from "next/image";
+import Link from "next/link";
 import path from "path";
 
 export default async function ProjectPage({
@@ -38,6 +39,9 @@ export default async function ProjectPage({
           priority={true}
         />
         <p className="py-2">{projectData.body}</p>
+        <p className="text-center text-xl">See it in action <Link className='underline' href={`${projectData.demo}`}>here </Link> </p>
+        <p className="text-center text-xl">Peep the code <Link className='underline' href={`${projectData.repo}`}>here </Link> </p>
+
       </article>
     </section>
   );
