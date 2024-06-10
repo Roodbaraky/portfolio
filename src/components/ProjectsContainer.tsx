@@ -35,3 +35,16 @@ export default function ProjectsContainer() {
   </section>
   )
 }
+
+// JSON FOR ADDING NEW PROJECTS
+// {
+//     "project_slug": "",
+//     "title": "",
+//     "description": "",
+//     "body": "",
+//     "date": "",
+//     "tags": [],
+//     "imagePath": "",
+//     "demo": "",
+//     "repo": ""
+//   }
