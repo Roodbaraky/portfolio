@@ -37,10 +37,11 @@ export default async function ProjectPage({
           width={600}
           height={600}
           priority={true}
+          className="rounded-xl"
         />
         <p className="py-2">{projectData.body}</p>
-        <p className="text-center text-xl">See it in action <Link className='underline' href={`${projectData.demo}`}>here </Link> </p>
-        <p className="text-center text-xl">Peep the code <Link className='underline' href={`${projectData.repo}`}>here </Link> </p>
+        <p className="text-center text-xl">See it in action <Link target='_blank' className='underline' href={`${projectData.demo}`}>here </Link> </p>
+        <p className="text-center text-xl">Peep the code <Link target='_blank' className='underline' href={`${projectData.repo}`}>here </Link> </p>
 
       </article>
     </section>

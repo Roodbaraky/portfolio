@@ -141,21 +141,21 @@ export default function Navbar() {
             <button
               data-set-theme="cupcake"
               data-act-class="ACTIVECLASS"
-              className="btn btn-sm rounded-full btn-primary"
+              className="btn btn-sm rounded-full btn-ghost"
             >
               <BsBrightnessHighFill />
             </button>
             <button
               data-set-theme="dark"
               data-act-class="ACTIVECLASS"
-              className="btn btn-sm rounded-full btn-primary "
+              className="btn btn-sm rounded-full btn-ghost "
             >
               <BsFillMoonStarsFill />
             </button>
             <button
               data-set-theme="valentine"
               data-act-class="ACTIVECLASS"
-              className="btn btn-sm rounded-full btn-primary "
+              className="btn btn-sm rounded-full btn-ghost "
             >
               <BsEmojiKissFill />
             </button>

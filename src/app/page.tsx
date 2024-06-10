@@ -7,7 +7,7 @@ import SkillsContainer from "@/components/SkillsContainer";
 export default function Home() {
   return (
     <main className="px-2 mx-auto w-full">
-      <a id="about" className="absolute -top-24"></a>
+      <SegmentDivider title="About"/>
       <About />
       <SegmentDivider title="Skills" />
       <SkillsContainer />
