@@ -17,7 +17,7 @@ export default function ProjectsContainer() {
   return (
     <section id="projects-section" className="flex flex-col items-center">
         
-    <div className="projects-container w-[80%] flex flex-col lg:flex-row gap-8 mt-6">
+    <div className="projects-container w-[80%] flex flex-col lg:flex-row gap-8 mt-6 flex-wrap justify-center">
         {projects.map(
           (project: {
             project_slug: string;

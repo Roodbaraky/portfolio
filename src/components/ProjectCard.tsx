@@ -11,14 +11,15 @@ export default function ProjectCard({
     project_slug: string;
     title: string;
     body: string;
+    description:string;
   };
 }) {
   return (
-    <article className=" hover:scale-110 transition-all delay-150 ease-in-out relative overflow-hidden rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 ">
+    <article className="project-img hover:scale-[102%] transition-all delay-150 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px]">
       <Image
         alt=""
         src={project.imagePath}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover rounded"
         width={600}
         height={600}
       />
@@ -35,7 +36,7 @@ export default function ProjectCard({
           </Link>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-            {project.body}
+            {project.description}
           </p>
         </div>
       </div>
