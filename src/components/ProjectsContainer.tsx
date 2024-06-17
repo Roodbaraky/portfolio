@@ -4,6 +4,18 @@ import path from 'path';
 import React from 'react'
 import ProjectCard from './ProjectCard';
 
+export interface Project{
+  project_slug: string,
+      title: string,
+      description: string,
+      body: string,
+      date: string,
+      tags: string[],
+      imagePath: string,
+      demo?: string,
+    repo?: string
+}
+
 export default function ProjectsContainer() {
 
     const filePath = path.join(
@@ -19,13 +31,7 @@ export default function ProjectsContainer() {
         
     <div className="projects-container w-[80%] flex flex-col lg:flex-row gap-8 mt-6 flex-wrap justify-center">
         {projects.map(
-          (project: {
-            project_slug: string;
-            imagePath: string;
-            date: string;
-            title: string;
-            body: string;
-          }) => (
+          (project:Project) => (
             <ProjectCard key={project.project_slug} project={project} />
           )
         )}
@@ -35,6 +41,8 @@ export default function ProjectsContainer() {
   </section>
   )
 }
+
+
 
 // JSON FOR ADDING NEW PROJECTS
 // {

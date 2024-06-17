@@ -1,19 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {Project} from './ProjectsContainer' 
 
 export default function ProjectCard({
-  project,
-}: {
-  project: {
-    imagePath: string;
-    date: string;
-    project_slug: string;
-    title: string;
-    body: string;
-    description:string;
-  };
-}) {
+  project
+}: {project:Project}) {
   return (
     <article className="project-img hover:scale-[102%] transition-all delay-150 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px]">
       <Image
