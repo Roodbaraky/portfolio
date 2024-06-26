@@ -7,11 +7,11 @@ export default function ProjectCard({
   project
 }: {project:Project}) {
   return (
-    <article className="project-img hover:scale-[102%] transition-all delay-150 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px]">
+    <article className="project-img hover:scale-[102%] transition-all delay-150 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px] max-w-full sm:max-w-full self-center mx-auto">
       <Image
         alt=""
         src={project.imagePath}
-        className="absolute inset-0 h-full w-full object-cover rounded"
+        className="absolute inset-0 h-full w-full  object-cover rounded"
         width={600}
         height={600}
       />
