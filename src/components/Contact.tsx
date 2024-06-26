@@ -24,14 +24,14 @@ export default function Contact() {
               <input
                 type="text"
                 required
-                className="grow  overflow-hidden placeholder:italic placeholder:opacity-60"
+                className="grow  overflow-hidden text-ellipsis placeholder:italic placeholder:opacity-60"
                 placeholder="BigShotTechRecruiter@site.com"
               />
             </label>
             <div>
               <label
                 htmlFor="message"
-                className="block text-lg font-medium hidden"
+                className="text-lg font-medium hidden"
               >
                 Message
               </label>
