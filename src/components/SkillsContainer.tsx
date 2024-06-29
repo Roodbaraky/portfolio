@@ -58,7 +58,7 @@ export default function SkillsContainer() {
                     <a className="italic">Supabase</a>.
                   </li>
                   <li className="py-1 text-left">
-                    <p className="font-semibold">Testing:</p> Stictly adhering
+                    <p className="font-semibold">Testing:</p> Strictly adhering
                     to Test Driven Development (TDD) using{" "}
                     <a className="italic">Jest</a> and{" "}
                     <a className="italic">Cypress</a>.
