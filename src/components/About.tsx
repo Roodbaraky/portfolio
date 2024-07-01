@@ -40,11 +40,10 @@ export default function About() {
                   <em>P.S. I&apos;m really good at it</em>
                 </p>
                 <p className="text-2xl lg:text-3xl">
-                  I am eager to work on new projects, across a broad array of
-                  tech.
+                I specialise in <strong>React, NextJS, TypeScript, NodeJS</strong> and <strong>PostgreSQL</strong>.
                 </p>
-                <p className="text-3xl lg:text-4xl pb-4">
-                  Let&apos;s build something awesome!
+                <p className="text-3xl lg:text-3xl pb-4">
+                  Take a look at my <a href='#projects' className='underline font-semibold'>projects</a> or my <a className='underline font-semibold' href="https://github.com/Roodbaraky" target='_blank'>GitHub</a> for examples of my work
                 </p>
                 <div className="flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end">
                   <div className="flex gap-5 self-center">
