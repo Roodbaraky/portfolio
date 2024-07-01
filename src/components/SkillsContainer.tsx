@@ -21,30 +21,30 @@ export default function SkillsContainer() {
                 <ul>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Frontend:</p> Building sleek
-                    UIs with <a className="italic">HTML</a>,{" "}
-                    <a className="italic">CSS</a>,{" "}
-                    <a className="italic">JavaScript</a>, and modern frameworks
-                    like <a className="italic">React</a>.
+                    UIs with <a className="italic font-semibold">HTML</a>,{" "}
+                    <a className="italic font-semibold">CSS</a>,{" "}
+                    <a className="italic font-semibold">JavaScript</a>, and modern frameworks
+                    like <a className="italic font-semibold">React</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Backend:</p> Creating robust
-                    servers with <a className="italic">Node.js</a> and{" "}
-                    <a className="italic">Express</a>. Desiging and building
-                    RESTful APIs with <a className="italic">PostgreSQL</a> and{" "}
-                    <a className="italic">MongoDB</a> .
+                    servers with <a className="italic font-semibold">Node.js</a> and{" "}
+                    <a className="italic font-semibold">Express</a>. Desiging and building
+                    RESTful APIs with <a className="italic font-semibold">PostgreSQL</a> and{" "}
+                    <a className="italic font-semibold">MongoDB</a> .
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Mobile:</p> Developing apps
-                    with <a className="italic">React Native</a> and{" "}
-                    <a className="italic">Flutter</a>. Basic porting to{" "}
-                    <a className="italic">iOS</a> (Swift) and{" "}
-                    <a className="italic">Android</a> (Android Studio) .
+                    with <a className="italic font-semibold">React Native</a> and{" "}
+                    <a className="italic font-semibold">Progressive Web Applications (PWA)</a>. Basic porting to{" "}
+                    <a className="italic font-semibold">iOS</a> (xcode) and{" "}
+                    <a className="italic font-semibold">Android</a> (Android Studio) .
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Design:</p> Crafting
                     user-friendly interfaces with{" "}
-                    <a className="italic">Figma</a> and{" "}
-                    <a className="italic">Dribble</a>.
+                    <a className="italic font-semibold">Figma</a> and{" "}
+                    <a className="italic font-semibold">Dribble</a>.
                   </li>
                 </ul>
               </div>
@@ -53,27 +53,26 @@ export default function SkillsContainer() {
                 <ul>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Databases:</p> Managing data
-                    with <a className="italic">MongoDB</a> and{" "}
-                    <a className="italic">PostgreSQL</a>. Experience with{" "}
-                    <a className="italic">Supabase</a>.
+                    with <a className="italic font-semibold">MongoDB</a> and{" "}
+                    <a className="italic font-semibold">PostgreSQL</a>. Experience with{" "}
+                    <a className="italic font-semibold">Supabase</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Testing:</p> Strictly adhering
                     to Test Driven Development (TDD) using{" "}
-                    <a className="italic">Jest</a> and{" "}
-                    <a className="italic">Cypress</a>.
+                    <a className="italic font-semibold">Jest</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">CI/CD:</p> Following Agile
                     continuous development principles and setting up CI/CD
                     pipelines with tools such as{" "}
-                    <a className="italic">GitHub Actions</a>.
+                    <a className="italic font-semibold">GitHub Actions</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">AI:</p> Integrating AI features
-                    using <a className="italic">CohereAI</a>,{" "}
-                    <a className="italic">TensorFlow.js</a> and{" "}
-                    <a className="italic">Python</a>.
+                    using <a className="italic font-semibold">CohereAI</a>,{" "}
+                    <a className="italic font-semibold">TensorFlow.js</a> and{" "}
+                    <a className="italic font-semibold">Python</a>.
                   </li>
                 </ul>
               </div>
@@ -84,17 +83,17 @@ export default function SkillsContainer() {
                 <ul>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Agile:</p> Practicing{" "}
-                    <a className="italic">Scrum</a> and{" "}
-                    <a className="italic">Kanban</a> using{" "}
-                    <a className="italic">Trello</a>, and{" "}
-                    <a className="italic">Miro</a>.
+                    <a className="italic font-semibold">Scrum</a> and{" "}
+                    <a className="italic font-semibold">Kanban</a> using{" "}
+                    <a className="italic font-semibold">Trello</a>, and{" "}
+                    <a className="italic font-semibold">Miro</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Collaboration:</p> Experienced
                     with pair programming and using team communication platforms
-                    such as <a className="italic">Slack</a>,{" "}
-                    <a className="italic">Zoom</a>, and{" "}
-                    <a className="italic">Microsoft Teams</a>.
+                    such as <a className="italic font-semibold">Slack</a>,{" "}
+                    <a className="italic font-semibold">Zoom</a>, and{" "}
+                    <a className="italic font-semibold">Microsoft Teams</a>.
                   </li>
                   <li className="py-1 text-left">
                     <p className="font-semibold">Leadership:</p> Leading daily
