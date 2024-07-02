@@ -129,7 +129,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="https://drive.google.com/uc?export=download&id=1RqxkZrhN6kk0z222h4z_en7t7fUtLueh"
+              href="https://2ly.link/1ygni"
               target="_blank"
             >
               <BsFileEarmarkArrowDown />

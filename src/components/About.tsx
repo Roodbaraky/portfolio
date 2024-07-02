@@ -65,7 +65,7 @@ export default function About() {
                   <div className="w-fit self-center">
                     <a
                       className="btn btn-outline btn-warning rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap"
-                      href="https://drive.google.com/uc?export=download&id=1_7lyU59cjVRbFqhz1jL21Za0zbSwuNKG"
+                      href="https://2ly.link/1ygni"
                       target="_blank"
                     >
                       <BsFileEarmarkArrowDown />
