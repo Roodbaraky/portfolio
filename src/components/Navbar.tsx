@@ -53,18 +53,12 @@ export default function Navbar() {
       setShadow("shadow-xs");
       setBgcolor("bg-base-100");
     }
-    if (scrollPosition.current / scrollPosition.previous < 1) {
-      // setBgcolor('bg-transparent')
-      // setShadow('')
-    }
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPosition]);
-
-  const handleTouchOn = () => {};
 
   return (
     <nav
@@ -78,6 +72,7 @@ export default function Navbar() {
             tabIndex={0}
             className={`btn ${btn} text-primary dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start`}
             role="button"
+            aria-label="Dropdown menu button"
           >
             <svg
               className="scale-[220%]"
@@ -107,13 +102,14 @@ export default function Navbar() {
                     ? `#${navLink.toLowerCase()}`
                     : `/#${navLink.toLowerCase()}`
                 }
+                aria-label={`Link to ${navLink}`}
               >
                 {navLink}
               </Link>
             </li>
           ))}
           <li>
-            <Link href="https://github.com/Roodbaraky" target="_blank">
+            <Link href="https://github.com/Roodbaraky" target="_blank" aria-label="Link to GitHub">
               <BsGithub />
               GitHub
             </Link>
@@ -122,16 +118,14 @@ export default function Navbar() {
             <Link
               href="https://www.linkedin.com/in/koorosh-roodbaraky/"
               target="_blank"
+              aria-label="Link to LinkedIn"
             >
               <BsLinkedin />
               LinkedIn
             </Link>
           </li>
           <li>
-            <Link
-              href="https://2ly.link/1ygni"
-              target="_blank"
-            >
+            <Link href="https://2ly.link/1ygni" target="_blank" aria-label="Link to download CV">
               <BsFileEarmarkArrowDown />
               Download CV
             </Link>
