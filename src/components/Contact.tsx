@@ -60,6 +60,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark "
+              aria-label='Link to GitHub'
             >
               <BsGithub />
             </a>
@@ -68,6 +69,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark "
+              aria-label='Link to LinkedIn'
             >
               <BsLinkedin />
             </a>
@@ -76,6 +78,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark "
+              aria-label='Link to WhatsApp'
             >
               <BsWhatsapp />
             </a>
@@ -84,6 +87,8 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark "
+              aria-label='Link to phonecall'
+
             >
               <BsTelephoneFill />
             </a>
@@ -92,6 +97,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:scale-125 transition-all delay-100 ease-in-out text-primary hover:text-primary-dark "
+              aria-label='Link to SMS'
             >
               <BsChatText />
             </a>
