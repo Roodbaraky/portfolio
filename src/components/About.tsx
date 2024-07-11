@@ -69,32 +69,32 @@ export default function About() {
                 </a>{" "}
                 for examples of my work
               </p>
-              <div className="flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end">
-                <div className="flex gap-5 self-center">
+              <div className="flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end ">
+                <div className="flex gap-5 self-center ">
                   <a
-                    className="btn btn-warning rounded-full"
+                    className="btn btn-secondary rounded-full"
                     href="https://www.linkedin.com/in/koorosh-roodbaraky/"
                   >
                     <BsLinkedin />
                     LinkedIn
                   </a>
                   <a
-                    className="btn btn-warning rounded-full"
+                    className="btn btn-secondary rounded-full"
                     href="https://github.com/Roodbaraky"
                   >
                     <BsGithub />
                     GitHub
                   </a>
-                </div>
-                <div className="w-fit self-center">
                   <a
-                    className="btn btn-outline btn-warning rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap"
+                    className="btn btn-outline btn-secondary rounded-full w-48 mx-auto lg:mx-0 lg:w-fit flex-nowrap text-nowrap"
                     href="https://2ly.link/1ygni"
                     target="_blank"
                   >
                     <BsFileEarmarkArrowDown />
                     Download my CV
                   </a>
+                </div>
+                <div className="w-fit self-center">
                 </div>
               </div>
             </div>

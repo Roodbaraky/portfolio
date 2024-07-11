@@ -133,7 +133,7 @@ export default function Navbar() {
 
           <div className="sm:hidden flex flex-wrap justify-evenly">
             <button
-              data-set-theme="cupcake"
+              data-set-theme="emerald"
               data-act-class="ACTIVECLASS"
               className="btn btn-sm rounded-full btn-ghost"
             >
@@ -166,7 +166,7 @@ export default function Navbar() {
           <BsSlashCircle />
         </button>
         <button
-          data-set-theme="cupcake"
+          data-set-theme="emerald"
           data-act-class="ACTIVECLASS"
           className={`${btn} rounded-full btn`}
         >
