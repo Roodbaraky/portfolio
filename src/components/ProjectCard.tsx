@@ -30,6 +30,7 @@ export default function ProjectCard({
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
             {project.description}
           </p>
+          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-outline badge-accent mx-1 hover:animate-pulse cursor-default' >{tag}</div>)}
         </div>
       </div>
     </article>
