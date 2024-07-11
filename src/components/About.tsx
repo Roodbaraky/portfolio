@@ -50,7 +50,7 @@ export default function About() {
             <div className="flex flex-row self-end justify-center gap-6 py-2">
             {techStack.map((tech) => (
               <Icon key={tech} iconName={tech} 
-              className="hover:scale-105 hover:drop-shadow-2xl"
+              className="hover:scale-105 hover:drop-shadow-2xl transition-all duration-300 ease-in-out"
               />
             ))}
           </div>
