@@ -9,12 +9,7 @@ export default async function ProjectPage({
   params: { project: string };
 }) {
   const { project } = params;
-  const filePath = path.join(
-    process.cwd(),
-    "src",
-    "resources",
-    "projects.json"
-  );
+  const filePath = process.cwd() + "/src/resources/projects.json";
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const projects = JSON.parse(jsonData);
 
@@ -40,9 +35,26 @@ export default async function ProjectPage({
           className="rounded-xl"
         />
         <p className="py-2">{projectData.body}</p>
-        <p className="text-center text-xl">See it in action <Link target='_blank' className='underline' href={`${projectData.demo}`}>here </Link> </p>
-        <p className="text-center text-xl">Peep the code <Link target='_blank' className='underline' href={`${projectData.repo}`}>here </Link> </p>
-
+        <p className="text-center text-xl">
+          See it in action{" "}
+          <Link
+            target="_blank"
+            className="underline"
+            href={`${projectData.demo}`}
+          >
+            here{" "}
+          </Link>{" "}
+        </p>
+        <p className="text-center text-xl">
+          Peep the code{" "}
+          <Link
+            target="_blank"
+            className="underline"
+            href={`${projectData.repo}`}
+          >
+            here{" "}
+          </Link>{" "}
+        </p>
       </article>
     </section>
   );
