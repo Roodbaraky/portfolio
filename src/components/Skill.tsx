@@ -1,8 +1,8 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
 interface SkillProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
-  description: string;
+  description: ReactNode;
 }
 
 export default function Skill({ title, description, children }: SkillProps) {

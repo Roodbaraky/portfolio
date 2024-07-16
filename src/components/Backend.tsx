@@ -10,7 +10,13 @@ export default function Backend() {
     <Skill
       title="Backend Development"
       description={
-        "Building responsive websites and applications, with a vested interest in progressive web apps (PWAs)"
+     <>
+         <p>Building <strong>REST APIs</strong> to support Full-Stack applications</p>
+            <p>Writing complex <strong>SQL queries</strong> and managing databases</p>
+            <p><strong>Test-Driven Development (TDD)</strong> for <strong>unit, integration</strong> and end-to-end testing, using extended matcher libraries, Mock Functions and more
+         </p>
+          
+     </>
       }
      
     >

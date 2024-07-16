@@ -9,8 +9,10 @@ export default function Frontend() {
     <Skill
       title="Web Development"
       description={
-        "Building responsive websites and applications, with a vested interest in progressive web apps (PWAs)"
-      }
+<p>
+          Building <strong>responsive</strong> websites and applications, using modern frontend frameworks like <strong>React and Next.js</strong>
+  
+</p>      }
     >
       <div className="flex flex-wrap justify-evenly gap-2">
         <IconSpan>
