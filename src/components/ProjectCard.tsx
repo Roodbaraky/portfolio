@@ -7,7 +7,9 @@ export default function ProjectCard({
   project
 }: {project:Project}) {
   return (
-    <article className="project-img hover:scale-[102%] transition-all delay-150 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px] max-w-full sm:max-w-full self-center mx-auto">
+      <Link href={`/${project.project_slug}`}>
+    <article className="project-img hover:scale-[102%] transition-all duration-500 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px] max-w-full sm:max-w-full self-center mx-auto  hover:outline outline-secondary hover:drop-shadow-lg drop-shadow"
+    >
       <Image
         alt=""
         src={project.imagePath}
@@ -23,16 +25,15 @@ export default function ProjectCard({
             {project.date}{" "}
           </time>
 
-          <Link href={`/${project.project_slug}`}>
-            <h3 className="mt-0.5 text-lg text-white">{project.title}</h3>
-          </Link>
+            <h3 className="mt-0.5 text-3xl font-sans font-bold text-white">{project.title}</h3>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
             {project.description}
           </p>
-          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-outline badge-accent mx-1 hover:animate-pulse cursor-default' >{tag}</div>)}
+          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-content badge-secondary mx-1 hover:badge-success cursor-default' >{tag}</div>)}
         </div>
       </div>
     </article>
+          </Link>
   );
 }
