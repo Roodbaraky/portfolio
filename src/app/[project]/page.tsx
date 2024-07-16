@@ -1,3 +1,4 @@
+import Icon from "@/components/icon";
 import fs from "fs";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +23,7 @@ export default async function ProjectPage({
   }
 
   return (
-    <section className="mt-16 mx-auto self-center flex flex-col">
+    <section className="mt-16 mx-auto w-full self-center flex flex-col">
       <article className="p-12">
         <h1 className="text-5xl">{projectData.title}</h1>
         <p className="text-justify my-2">{projectData.description}</p>
@@ -34,6 +35,11 @@ export default async function ProjectPage({
           priority={true}
           className="rounded-xl"
         />
+        <div className="flex justify-start gap-5">{projectData.tags.map((tag:string)=>
+          <div key={tag}>
+          <Icon iconName={tag}  />
+          <p>{tag[0].toUpperCase()+tag.slice(1)}</p>
+          </div>)}</div>
         <p className="py-2">{projectData.body}</p>
         <p className="text-center text-xl">
           See it in action{" "}

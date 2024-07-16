@@ -9,7 +9,7 @@
       "typescript",
       "react",
       "tailwindcss",
-      "node",
+      "nodejs",
       "postgresql",
       "express"
     ],
