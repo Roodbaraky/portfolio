@@ -7,7 +7,7 @@ export default function ProjectCard({
   project
 }: {project:Project}) {
   return (
-      <Link href={`/${project.project_slug}`}>
+      <Link href={`/${project.project_slug}`} className='w-fit p-3 self-center'>
     <article className="project-img hover:scale-[102%] transition-all duration-500 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xlmx-4 overflow-hidden w-[550px] max-w-full sm:max-w-full self-center mx-auto  hover:outline outline-secondary hover:drop-shadow-lg drop-shadow"
     >
       <Image
@@ -30,7 +30,7 @@ export default function ProjectCard({
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
             {project.description}
           </p>
-          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-content badge-secondary mx-1 hover:badge-primary cursor-default' >{tag}</div>)}
+          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge badge-content badge-secondary mx-1 p-2 hover:badge-primary cursor-default' >{tag}</div>)}
         </div>
       </div>
     </article>
