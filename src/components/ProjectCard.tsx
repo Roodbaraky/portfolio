@@ -30,7 +30,7 @@ export default function ProjectCard({
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
             {project.description}
           </p>
-          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-content badge-secondary mx-1 hover:badge-success cursor-default' >{tag}</div>)}
+          {project.tags.map((tag)=><div key={project.project_slug+tag} className='badge  badge-content badge-secondary mx-1 hover:badge-primary cursor-default' >{tag}</div>)}
         </div>
       </div>
     </article>
