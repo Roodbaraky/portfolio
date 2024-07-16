@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { BiSolidHome } from "react-icons/bi";
+import { BiLeftArrow, BiLeftArrowAlt, BiSolidHome } from "react-icons/bi";
 import {
   BsBrightnessHighFill,
   BsEmojiKissFill,
@@ -12,6 +12,7 @@ import {
   BsLinkedin,
   BsSlashCircle,
 } from "react-icons/bs";
+import { FaLeftLong } from "react-icons/fa6";
 import { themeChange } from "theme-change";
 
 export default function Navbar() {
@@ -86,8 +87,10 @@ export default function Navbar() {
             </svg>
           </div>
         ) : (
-          <Link href="/" className={`btn ${btn}`}>
-            <BiSolidHome className="pointer-events-none scale-150" />
+          <Link href="/#projects" className={`btn ${btn}`}>
+            {/* <BiSolidHome className="pointer-events-none scale-150" /> */}
+            <BiLeftArrowAlt className="pointer-events-none scale-[200%]" />
+
           </Link>
         )}
         <ul
