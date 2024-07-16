@@ -14,7 +14,7 @@ export default function Skill({ title, description, children }: SkillProps) {
     >
       <div>
         <h3 className="text-2xl text-center ">{title}</h3>
-        <p className="place-content-center text-center">{description}</p>
+        <div className="place-content-center text-center">{description}</div>
       </div>
       <div className="flex justify-center gap-2">{children}</div>
     </div>

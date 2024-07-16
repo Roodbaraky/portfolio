@@ -13,8 +13,8 @@ export default function Backend() {
      <>
          <p>Building <strong>REST APIs</strong> to support Full-Stack applications</p>
             <p>Writing complex <strong>SQL queries</strong> and managing databases</p>
-            <p><strong>Test-Driven Development (TDD)</strong> for <strong>unit, integration</strong> and end-to-end testing, using extended matcher libraries, Mock Functions and more
-         </p>
+            
+        
           
      </>
       }
@@ -46,14 +46,7 @@ export default function Backend() {
             <SiFastapi className=" text-4xl mx-auto"/>
            FastAPI
           </IconSpan>
-          <IconSpan>
-          <SiJest className=" text-4xl mx-auto" />
-            Jest
-          </IconSpan>
-          <IconSpan>
-          <SiVitest className=" text-4xl mx-auto" />
-            Vitest
-          </IconSpan>
+         
     </div>
     </Skill>
   );

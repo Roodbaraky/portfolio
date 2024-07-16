@@ -1,6 +1,7 @@
 import Backend from "./Backend";
 import Frontend from "./Frontend";
 import Mobile from "./Mobile";
+import Testing from "./Testing";
 
 export default function SkillsContainer() {
   return (
@@ -104,8 +105,10 @@ export default function SkillsContainer() {
               </ul>
             </div>
           </div> */}
-        <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-evenly">
+          {/* md:grid md:grid-cols-2 md:gap-20 */}
+          <div className="flex flex-col gap-4  md:grid md:grid-cols-2 lg:flex lg:flex-row lg:flex-wrap  justify-evenly">
           <Frontend />
+          <Testing />
           <Mobile />
           <Backend />
         </div>

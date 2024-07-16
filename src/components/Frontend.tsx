@@ -9,10 +9,11 @@ export default function Frontend() {
     <Skill
       title="Web Development"
       description={
-<p>
-          Building <strong>responsive</strong> websites and applications, using modern frontend frameworks like <strong>React and Next.js</strong>
-  
-</p>      }
+        <p>
+          Building <strong>responsive</strong> websites and applications, using
+          modern frontend frameworks like <strong>React and Next.js</strong>
+        </p>
+      }
     >
       <div className="flex flex-wrap justify-evenly gap-2">
         <IconSpan>
@@ -38,10 +39,6 @@ export default function Frontend() {
         <IconSpan>
           <RiNextjsFill className=" text-4xl mx-auto" />
           Next
-        </IconSpan>
-        <IconSpan>
-          <SiTestinglibrary className=" text-4xl mx-auto" />
-          Testing Library
         </IconSpan>
       </div>
     </Skill>
