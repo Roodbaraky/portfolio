@@ -43,7 +43,7 @@ export default function Navbar() {
       setHamburger("hamburger-icon");
     }
     if (scrollPosition.current > 300) {
-      setBtn("btn-primary");
+      setBtn("btn-secondary");
       setHamburger("hamburger-icon-alt");
     }
     if (
