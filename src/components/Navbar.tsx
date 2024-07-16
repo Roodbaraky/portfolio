@@ -50,8 +50,8 @@ export default function Navbar() {
       scrollPosition.current / scrollPosition.previous > 1 &&
       scrollPosition.current > 300
     ) {
-      setShadow("shadow-xs");
-      setBgcolor("bg-base-100");
+      setShadow("shadow-md");
+      setBgcolor("bg-base-100 opacity-80");
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -62,10 +62,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed flex items-center justify-between p-4 mb-12 w-full max-w-[1500px] ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
+      className={`fixed flex items-center justify-between px-10 py-1 mx-auto mb-12 w-full  ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
     >
       <div
-        className={`group dropdown dropdown-hover place-self-start pr-8 pb-3`}
+        className={`group dropdown dropdown-hover place-self-start pr-8`}
       >
         {currentPath === "/" ? (
           <div

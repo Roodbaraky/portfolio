@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${league_spartan.variable}`}>
       <body className={inter.className}>
-        <Container>
           <Navbar />
+        <Container>
           {children}
         </Container>
       </body>
