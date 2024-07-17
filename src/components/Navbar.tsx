@@ -36,27 +36,27 @@ export default function Navbar() {
       const prevPos = scrollPosition.current;
       setScrollPosition({ previous: prevPos, current: newPos });
     };
-    if (scrollPosition.current < 120 || scrollPosition.current < scrollPosition.previous) {
+    if (
+      scrollPosition.current < 120 ||
+      scrollPosition.current < scrollPosition.previous
+    ) {
       setBtn("btn-ghost");
       setBgcolor("bg-transparent");
       setShadow("");
       setHamburger("hamburger-icon");
-      document.getElementById('navbar')!.style.top = '0px'
+      document.getElementById("navbar")!.style.top = "0px";
       setBgcolor("bg-base-100 opacity-85");
     }
-    // if (scrollPosition.current > 300) {
-    //   setBtn("btn-secondary");
-    //   setHamburger("hamburger-icon-alt");
-    // }
-    if (
-      scrollPosition.current > scrollPosition.previous 
-    ) {
+    if (scrollPosition.current > scrollPosition.previous) {
       setShadow("shadow-md");
-      
-      document.getElementById('navbar')!.style.top = '-80px'
+      document.getElementById("navbar")!.style.top = "-52px";
+      document.getElementById("navbar")!.addEventListener("mouseleave", () => {
+        document.getElementById("navbar")!.style.top = "-52px";
+      });
     }
- 
-
+    document.getElementById("navbar")!.addEventListener("mouseenter", () => {
+      document.getElementById("navbar")!.style.top = "0px";
+    });
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -65,18 +65,20 @@ export default function Navbar() {
 
   return (
     <nav
-    id="navbar"
+      id="navbar"
       className={`fixed flex items-center max-w-[375px] sm:max-w-full justify-between px-10 py-1 mx-auto mb-12 w-full  ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
     >
-      <div
-        className={`group dropdown dropdown-hover place-self-start pr-8`}
-      >
+      <div className={`group dropdown dropdown-hover place-self-start pr-8`}>
         {currentPath === "/" ? (
           <div
             tabIndex={0}
             className={`btn ${btn} text-primary dropdown dropdown-bottom flex w-fit aspect-square rounded-full self-start`}
             role="button"
             aria-label="Dropdown menu button"
+            onMouseOver={() => {
+              document.getElementById("dropdown")!.style.opacity = "100";
+              document.getElementById("dropdown")!.style.pointerEvents = "all";
+            }}
           >
             <svg
               className="scale-[220%]"
@@ -91,13 +93,12 @@ export default function Navbar() {
           </div>
         ) : (
           <Link href="/#projects" className={`btn ${btn}`}>
-            {/* <BiSolidHome className="pointer-events-none scale-150" /> */}
             <BiLeftArrowAlt className="pointer-events-none scale-[200%]" />
-
           </Link>
         )}
         <ul
           tabIndex={0}
+          id="dropdown"
           className="mt-1 bg-base-100  dropdown-content delay-150 menu p-2 shadow  rounded-box w-52 border-dotted"
         >
           {navLinks.map((navLink) => (
@@ -108,6 +109,11 @@ export default function Navbar() {
                     ? `#${navLink.toLowerCase()}`
                     : `/#${navLink.toLowerCase()}`
                 }
+                onClick={() => {
+                  document.getElementById("dropdown")!.style.opacity = "0";
+                  document.getElementById("dropdown")!.style.pointerEvents =
+                    "none";
+                }}
                 aria-label={`Link to ${navLink}`}
               >
                 {navLink}
@@ -115,7 +121,11 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <Link href="https://github.com/Roodbaraky" target="_blank" aria-label="Link to GitHub">
+            <Link
+              href="https://github.com/Roodbaraky"
+              target="_blank"
+              aria-label="Link to GitHub"
+            >
               <BsGithub />
               GitHub
             </Link>
@@ -131,7 +141,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="https://2ly.link/1ygni" target="_blank" aria-label="Link to download CV">
+            <Link
+              href="https://2ly.link/1ygni"
+              target="_blank"
+              aria-label="Link to download CV"
+            >
               <BsFileEarmarkArrowDown />
               Download CV
             </Link>
