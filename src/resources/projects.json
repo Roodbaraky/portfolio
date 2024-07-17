@@ -18,16 +18,23 @@
     "repo": "https://github.com/Roodbaraky/nc-news-project"
   },
   {
+    "project_slug": "pokemart",
+    "title": "PokeMart",
+    "description": "a pokemon-based e-commerce site built with React, Next.js, and PostgreSQL.",
+    "body": "PokeMart is an e-commerce site where users can log in, add items to their basket and checkout.\nIn future iterations this will be incorporated as part of an Object-Oriented Pokemon battler browser game.",
+    "date": "",
+    "tags": ["typescript", "nextjs", "tailwindcss", "postgresql"],
+    "imagePath": "/assets/app3-proj.png",
+    "demo": "",
+    "repo": "https://github.com/Roodbaraky/nc-news-project"
+  },
+  {
     "project_slug": "skillflash",
     "title": "SkillFlash",
     "description": "an AI-powered flashcard app built with React Native and Typescript.",
     "body": "SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material.",
     "date": "",
-    "tags": [
-      "typescript",
-      "react-native",
-      "mongoDB"
-    ],
+    "tags": ["typescript", "react-native", "mongoDB"],
     "imagePath": "/assets/app2-proj.png",
     "demo": "https://northcoders.com/project-phase/skillflash",
     "repo": "https://github.com/Roodbaraky/SkillFlashFrontend"
@@ -38,13 +45,7 @@
     "description": "a discord-like instant messaging app built React + Vite on-top of a Python and FastAPI backend.",
     "body": "",
     "date": "",
-    "tags": [
-      "python",
-      "fastapi",
-      "typescript",
-      "react",
-      "tailwindcss"
-    ],
+    "tags": ["python", "fastapi", "typescript", "react", "tailwindcss"],
     "imagePath": "/assets/api-proj.png",
     "demo": "",
     "repo": "https://github.com/Roodbaraky/PyBase"
