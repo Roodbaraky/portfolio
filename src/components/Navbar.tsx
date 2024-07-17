@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { BiLeftArrowAlt } from "react-icons/bi";
 import {
   BsBrightnessHighFill,
@@ -15,12 +15,13 @@ import {
 import { themeChange } from "theme-change";
 
 export default function Navbar() {
-  const [btn, setBtn] = useState("btn-");
+  const [btn, setBtn] = useState("btn-ghost");
   const [bgcolor, setBgcolor] = useState("bg-transparent");
   const [shadow, setShadow] = useState("shadow");
   const [hamburger, setHamburger] = useState("hamburger-icon");
   const currentPath = usePathname();
   const navLinks = ["About", "Skills", "Projects", "Contact"];
+  
   useEffect(() => {
     themeChange(false);
   }, []);
@@ -29,37 +30,51 @@ export default function Navbar() {
     previous: 0,
     current: 0,
   });
+  const scrollPositionRef = useRef(scrollPosition);
 
   useEffect(() => {
+    scrollPositionRef.current = scrollPosition;
+    
+    const navbar = document.getElementById("navbar");
+    
+    const handleMouseEnter = () => {
+      navbar!.style.top = "0px";
+    };
+    
+    const handleMouseLeave = () => {
+      if (scrollPosition.current > 120) {
+        navbar!.style.top = "-45px";
+      }
+    };
+    
     const handleScroll = () => {
       const newPos = window.scrollY;
-      const prevPos = scrollPosition.current;
+      const prevPos = scrollPositionRef.current.current;
       setScrollPosition({ previous: prevPos, current: newPos });
     };
-    if (
-      scrollPosition.current < 120 ||
-      scrollPosition.current < scrollPosition.previous
-    ) {
+    
+    if (scrollPosition.current < 120 || scrollPosition.current < scrollPosition.previous) {
+      navbar!.removeEventListener("mouseleave", handleMouseLeave);
       setBtn("btn-ghost");
       setBgcolor("bg-transparent");
       setShadow("");
       setHamburger("hamburger-icon");
-      document.getElementById("navbar")!.style.top = "0px";
+      navbar!.style.top = "0px";
       setBgcolor("bg-base-100 opacity-85");
-    }
-    if (scrollPosition.current > scrollPosition.previous) {
+    } else if (scrollPosition.current > scrollPosition.previous) {
       setShadow("shadow-md");
-      document.getElementById("navbar")!.style.top = "-52px";
-      document.getElementById("navbar")!.addEventListener("mouseleave", () => {
-        document.getElementById("navbar")!.style.top = "-52px";
-      });
+      navbar!.style.top = "-45px";
+      navbar!.addEventListener("mouseleave", handleMouseLeave);
     }
-    document.getElementById("navbar")!.addEventListener("mouseenter", () => {
-      document.getElementById("navbar")!.style.top = "0px";
-    });
+    
+    navbar!.addEventListener("mouseenter", handleMouseEnter);
+    
     window.addEventListener("scroll", handleScroll);
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      navbar!.removeEventListener("mouseenter", handleMouseEnter);
+      navbar!.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, [scrollPosition]);
 
