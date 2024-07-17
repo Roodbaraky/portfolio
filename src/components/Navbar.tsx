@@ -37,23 +37,26 @@ export default function Navbar() {
       const prevPos = scrollPosition.current;
       setScrollPosition({ previous: prevPos, current: newPos });
     };
-    if (scrollPosition.current < 120) {
+    if (scrollPosition.current < 120 || scrollPosition.current < scrollPosition.previous) {
       setBtn("btn-ghost");
       setBgcolor("bg-transparent");
       setShadow("");
       setHamburger("hamburger-icon");
+      document.getElementById('navbar')!.style.top = '0px'
+      setBgcolor("bg-base-100 opacity-85");
     }
-    if (scrollPosition.current > 300) {
-      setBtn("btn-secondary");
-      setHamburger("hamburger-icon-alt");
-    }
+    // if (scrollPosition.current > 300) {
+    //   setBtn("btn-secondary");
+    //   setHamburger("hamburger-icon-alt");
+    // }
     if (
-      scrollPosition.current / scrollPosition.previous > 1 &&
-      scrollPosition.current > 300
+      scrollPosition.current > scrollPosition.previous 
     ) {
       setShadow("shadow-md");
-      setBgcolor("bg-base-100 opacity-80");
+      
+      document.getElementById('navbar')!.style.top = '-80px'
     }
+ 
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -63,6 +66,7 @@ export default function Navbar() {
 
   return (
     <nav
+    id="navbar"
       className={`fixed flex items-center justify-between px-10 py-1 mx-auto mb-12 w-full  ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
     >
       <div

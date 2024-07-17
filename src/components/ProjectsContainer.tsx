@@ -25,9 +25,9 @@ export default function ProjectsContainer() {
       const jsonData = fs.readFileSync(filePath, "utf-8");
       const projects = JSON.parse(jsonData);
   return (
-    <section id="projects-section" className="flex flex-col items-center">
+    <section id="projects-section" className="flex flex-col items-center justify-center">
         
-    <div className="projects-container w-[80%] flex flex-col lg:flex-row gap-8 mt-6 flex-wrap justify-center">
+    <div className="projects-container w-full flex flex-col lg:flex-row gap-8 mt-6 flex-wrap justify-center">
         {projects.map(
           (project:Project) => (
             <ProjectCard key={project.project_slug} project={project} />
