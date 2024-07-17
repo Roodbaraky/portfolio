@@ -47,10 +47,10 @@ export default function About() {
                 <strong>React, NextJS, TypeScript, NodeJS</strong> and{" "}
                 <strong>PostgreSQL</strong>.
               </p>
-            <div className="flex flex-row self-end justify-center gap-6 py-2">
+            <div className="flex  flex-wrap self-end justify-center gap-6 py-2">
             {techStack.map((tech) => (
               <Icon key={tech} iconName={tech} 
-              className="hover:scale-105 hover:drop-shadow-2xl transition-all duration-300 ease-in-out"
+              className="hover:scale-105 hover:drop-shadow-2xl transition-all duration-250 ease-in-out"
               />
             ))}
           </div>
@@ -70,7 +70,7 @@ export default function About() {
                 for examples of my work
               </p>
               <div className="flex flex-col gap-5 justify-center lg:flex-row lg:py-4 lg:justify-end ">
-                <div className="flex gap-5 self-center ">
+                <div className="flex flex-wrap gap-5 self-center justify-evenly">
                   <a
                     className="btn btn-secondary rounded-full"
                     href="https://www.linkedin.com/in/koorosh-roodbaraky/"
@@ -94,8 +94,7 @@ export default function About() {
                     Download my CV
                   </a>
                 </div>
-                <div className="w-fit self-center">
-                </div>
+                
               </div>
             </div>
           </article>

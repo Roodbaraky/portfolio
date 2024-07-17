@@ -9,7 +9,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       href={`/${project.project_slug}`}
       className="w-fit p-0 self-center place-items-center"
     >
-      <article className="project-img hover:scale-[102%] transition-all duration-500 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xl  overflow-hidden w-[550px] max-w-[350px] sm:max-w-full self-center mx-auto  hover:outline outline-secondary  drop-shadow">
+      <article className="project-img hover:scale-[102%] transition-all duration-500 ease-in-out relative rounded-lg shadow  hover:shadow-xl hover:drop-shadow-xl  overflow-hidden w-[550px] max-w-[320px] sm:max-w-full self-center mx-auto  hover:outline outline-secondary  drop-shadow">
         <Image
           alt=""
           src={project.imagePath}

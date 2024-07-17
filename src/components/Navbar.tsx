@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { BiLeftArrow, BiLeftArrowAlt, BiSolidHome } from "react-icons/bi";
+import { BiLeftArrowAlt } from "react-icons/bi";
 import {
   BsBrightnessHighFill,
   BsEmojiKissFill,
@@ -12,7 +12,6 @@ import {
   BsLinkedin,
   BsSlashCircle,
 } from "react-icons/bs";
-import { FaLeftLong } from "react-icons/fa6";
 import { themeChange } from "theme-change";
 
 export default function Navbar() {
@@ -67,7 +66,7 @@ export default function Navbar() {
   return (
     <nav
     id="navbar"
-      className={`fixed flex items-center justify-between px-10 py-1 mx-auto mb-12 w-full  ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
+      className={`fixed flex items-center max-w-[375px] sm:max-w-full justify-between px-10 py-1 mx-auto mb-12 w-full  ${bgcolor} rounded-xl z-40  hover:opacity-100 transition-all delay-350 ease-in-out ${shadow}`}
     >
       <div
         className={`group dropdown dropdown-hover place-self-start pr-8`}
