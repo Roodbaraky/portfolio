@@ -1,7 +1,7 @@
 [ {
   "project_slug": "examgenie",
   "title": "ExamGenie",
-  "description": "A learning aid which allows users to query past-paper questions and generate learning materials customised to specific ability level and content previously covered.",
+  "description": "A learning aid used by teachers to generate bespoke learning materials via scheme of work.",
   "body": "Exam Genie is a learning aid used by teachers to generate bespoke revision materials in a variety of formats specially tailored to their classes scheme of work and ability level.",
   "date": "",
   "tags": ["typescript", "react", "nodejs", "postgresql"],
