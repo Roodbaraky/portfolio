@@ -32,9 +32,6 @@ With that said, here's some things I'd like to accomplish for this site in the n
 
 - AI-powered cover letter generator
 - back-end for handling contact form -no more external hosting!
-- flesh out the body and skills section -honestly, I'm just really bad at writing
-- live-chat / chatbot(?), why not?
-- rebuild CSS components from scratch
-- make prettier with fonts etc.
+
 
 Please do get in touch if you have suggestions to further improve on this!

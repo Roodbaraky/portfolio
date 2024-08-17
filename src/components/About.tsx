@@ -3,7 +3,7 @@ import { BsFileEarmarkArrowDown, BsGithub, BsLinkedin } from "react-icons/bs";
 import Icon from "./icon";
 
 export default function About() {
-  const techStack = ["typescript", "nextjs", "react", "nodejs", "postgresql"];
+  const techStack = ["typescript", "react", "nodejs", "postgresql"];
   return (
     <section
       id="about-section"
