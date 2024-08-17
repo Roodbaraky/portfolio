@@ -1,4 +1,25 @@
-[
+[ {
+  "project_slug": "examgenie",
+  "title": "ExamGenie",
+  "description": "A learning aid which allows users to query past-paper questions and generate learning materials customised to specific ability level and content previously covered.",
+  "body": "Exam Genie is a learning aid used by teachers to generate bespoke revision materials in a variety of formats specially tailored to their classes scheme of work and ability level.",
+  "date": "",
+  "tags": ["typescript", "react", "nodejs", "postgresql"],
+  "imagePath": "/assets/app4-proj.png",
+  "demo": "https://www.linkedin.com/posts/koorosh-roodbaraky_examgenie-api-supabase-activity-7230541689931661313-mY7P?utm_source=share&utm_medium=member_desktop",
+  "repo": "https://github.com/Roodbaraky/ExamGenie-be"
+},
+  {
+    "project_slug": "skillflash",
+    "title": "SkillFlash",
+    "description": "an AI-powered flashcard app built with React Native and Typescript.",
+    "body": "SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material.",
+    "date": "",
+    "tags": ["typescript", "react-native", "mongoDB"],
+    "imagePath": "/assets/app2-proj.png",
+    "demo": "https://northcoders.com/project-phase/skillflash",
+    "repo": "https://github.com/Roodbaraky/SkillFlashFrontend"
+  },
   {
     "project_slug": "ncnews",
     "title": "NC News",
@@ -28,17 +49,7 @@
     "demo": "",
     "repo": "https://github.com/Roodbaraky/nc-news-project"
   },
-  {
-    "project_slug": "skillflash",
-    "title": "SkillFlash",
-    "description": "an AI-powered flashcard app built with React Native and Typescript.",
-    "body": "SkillFlash is a full-stack project written in Typescript utilsing the React Native framework. Its backend is powered by MongoDB and Express. SkillFlash is an AI-powered flash cards app which aims to help users prepare for interviews for tech roles, intepretting keywords from job descriptions in prompts to generate bespoke revision material.",
-    "date": "",
-    "tags": ["typescript", "react-native", "mongoDB"],
-    "imagePath": "/assets/app2-proj.png",
-    "demo": "https://northcoders.com/project-phase/skillflash",
-    "repo": "https://github.com/Roodbaraky/SkillFlashFrontend"
-  },
+ 
   {
     "project_slug": "pybase",
     "title": "PyBase Chat",
